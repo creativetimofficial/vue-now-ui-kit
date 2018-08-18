@@ -11,6 +11,15 @@ $box-shadow-lg: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
 .el-picker-panel.el-date-picker {
   width: 300px;
   border: 0;
+  &.date-picker-primary{
+    @include datepicker-colors($primary-color);
+    &.el-popper[x-placement^=bottom] .popper__arrow::after {
+      border-bottom-color: $primary-color;
+    }
+    &.el-popper[x-placement^=top] .popper__arrow::after {
+      border-top-color: $primary-color;
+    }
+  }
   @extend .picker-card-styles;
   .el-date-picker__header,
   .el-picker-panel__content {
@@ -23,32 +32,33 @@ $box-shadow-lg: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
   &.el-date-picker__header--bordered{
     border: none;
   }
-
   .el-picker-panel__icon-btn {
     margin-top: 0;
     height: 27px;
     width: 27px;
-    color: $primary-color;
+    color: white;
 
     &:hover {
       border-radius: 50%;
-      background-color: #eee;
+      background-color: rgba(255, 255, 255, 0.2);
     }
   }
   .el-date-picker__header-label, div {
     font-size: $font-size-base;
     font-weight: $font-weight-light;
-    color: $primary-color;
+    color: white;
     &:hover {
-      background-color: #eee;
+      background-color: rgba(255, 255, 255, 0.2);
       border-radius: $border-radius-large;
     }
   }
 }
 
 .el-picker-panel__content {
-  .el-date-table th {
-    color: $primary-color;
+  .el-date-table th,
+  .el-month-table th,
+  .el-year-table td {
+    color: white;
     font-family: $sans-serif-family;
     font-size: $font-size-base;
     font-weight: $font-weight-light;
@@ -62,19 +72,17 @@ $box-shadow-lg: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
   height: 32px;
   width: 32px;
   padding: 0;
+  color: white;
+  font-family: $sans-serif-family;
+  font-size: $font-size-base;
+  font-weight: $font-weight-light;
+
   &.current span,
   &.current a.cell {
-    background-color: $primary-color;
-    color: $white-color;
+    background-color: white;
+    color: $primary-color !important;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
     border-radius: 50%;
-  }
-  div {
-    &:hover {
-      color: $default-color
-    }
-    height: 100%;
-    padding: 0;
   }
 
   .cell,
@@ -84,12 +92,6 @@ $box-shadow-lg: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
     align-items: center;
     font-size: $font-size-base;
 
-    &:hover {
-      border-radius: 50%;
-      background: #eee;
-      cursor: pointer;
-      color: $default-color;
-    }
   }
   span {
     width: 32px;
@@ -102,20 +104,6 @@ $box-shadow-lg: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
 }
 .el-date-picker .el-date-picker__time-header{
   border: none;
-}
-.el-date-picker .el-time-panel.el-popper{
-  @extend .picker-card-styles;
-  button{
-    @extend .btn-primary, .btn-round, .btn-sm;
-    border: 0;
-    padding: 7px !important;
-    margin: 0 5px 0 0;
-    line-height: 14px;
-    font-weight: $font-weight-normal;
-    &:first-child{
-      @extend .btn-danger;
-    }
-  }
 }
 
 .el-date-editor.el-input, .el-date-editor.el-input__inner{

@@ -1,0 +1,29 @@
+@mixin arrow-color($type, $color) {
+  .el-popover.popover-#{$type} {
+    &[x-placement^=bottom] .popper__arrow,
+    &[x-placement^=bottom] .popper__arrow::after{
+      border-bottom-color: $color;
+    }
+
+    &[x-placement^=top] .popper__arrow,
+    &[x-placement^=top] .popper__arrow::after{
+      border-top-color: $color;
+    }
+
+    &[x-placement^=left] .popper__arrow,
+    &[x-placement^=left] .popper__arrow::after{
+      border-left-color: $color;
+    }
+
+    &[x-placement^=right] .popper__arrow,
+    &[x-placement^=right] .popper__arrow::after{
+      border-right-color: $color;
+    }
+  }
+}
+
+@include arrow-color('primary', $primary-color)
+@include arrow-color('info', $info-color)
+@include arrow-color('warning', $warning-color)
+@include arrow-color('success', $success-color)
+@include arrow-color('danger', $danger-color)

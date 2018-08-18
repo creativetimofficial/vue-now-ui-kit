@@ -26,7 +26,7 @@
 
                     <el-popover
                             ref="popover2"
-                            popper-class="popover"
+                            popper-class="popover popover-success"
                             placement="top-start"
                             width="200"
                             trigger="hover">
@@ -36,7 +36,7 @@
 
                     <el-popover
                             ref="popover3"
-                            popper-class="popover"
+                            popper-class="popover popover-danger"
                             placement="right"
                             width="200"
                             trigger="hover">

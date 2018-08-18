@@ -5,15 +5,26 @@
 
 .el-tooltip__popper.is-dark{
   background-color: $black-color;
-  .popper__arrow,
-  .popper__arrow::after{
-    border-top-color: $black-color;
-  }
 }
 
 .el-tooltip__popper.is-light{
-  .popper__arrow,
-  .popper__arrow::after{
-    border-top-color: white !important;
+  &[x-placement^=bottom] .popper__arrow,
+  &[x-placement^=bottom] .popper__arrow::after{
+    border-bottom-color: white;
+  }
+
+  &[x-placement^=top] .popper__arrow,
+  &[x-placement^=top] .popper__arrow::after{
+    border-top-color: white;
+  }
+
+  &[x-placement^=left] .popper__arrow,
+  &[x-placement^=left] .popper__arrow::after{
+    border-left-color: white;
+  }
+
+  &[x-placement^=right] .popper__arrow,
+  &[x-placement^=right] .popper__arrow::after{
+    border-right-color: white;
   }
 }
