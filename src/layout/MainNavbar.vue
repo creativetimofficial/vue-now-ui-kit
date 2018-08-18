@@ -19,7 +19,7 @@
         </template>
         <template slot="navbar-menu">
             <drop-down tag="li" title="Components" icon="now-ui-icons design_app" class="nav-item">
-                <nav-link to="/components">
+                <nav-link to="/">
                     <i class="now-ui-icons business_chart-pie-36"></i> All components
                 </nav-link>
                 <a href="https://demos.creative-tim.com/vue-now-ui-kit/documentation" target="_blank" class="dropdown-item">
