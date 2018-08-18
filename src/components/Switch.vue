@@ -16,33 +16,33 @@
   </div>
 </template>
 <script>
-  export default {
-    name: 'n-switch',
-    props: {
-      value: [Array, Boolean],
-      onText: String,
-      offText: String
+export default {
+  name: 'n-switch',
+  props: {
+    value: [Array, Boolean],
+    onText: String,
+    offText: String
+  },
+  computed: {
+    switchClass() {
+      let base = 'bootstrap-switch-';
+      let state = this.model ? 'on' : 'off';
+      let classes = base + state;
+      return classes;
     },
-    computed: {
-      switchClass () {
-        let base = 'bootstrap-switch-'
-        let state = this.model ? 'on' : 'off'
-        let classes = base + state
-        return classes
+    model: {
+      get() {
+        return this.value;
       },
-      model: {
-        get () {
-          return this.value
-        },
-        set (value) {
-          this.$emit('input', value)
-        }
-      }
-    },
-    methods: {
-      triggerToggle () {
-        this.model = !this.model
+      set(value) {
+        this.$emit('input', value);
       }
     }
+  },
+  methods: {
+    triggerToggle() {
+      this.model = !this.model;
+    }
   }
+};
 </script>

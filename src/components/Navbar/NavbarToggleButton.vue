@@ -11,12 +11,12 @@
   </button>
 </template>
 <script>
-    export default {
-      name: 'navbar-toggle-button',
-      props: {
-        toggled: Boolean
-      }
-    }
+export default {
+  name: 'navbar-toggle-button',
+  props: {
+    toggled: Boolean
+  }
+};
 </script>
 <style>
 </style>

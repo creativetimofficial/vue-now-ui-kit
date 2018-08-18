@@ -24,35 +24,38 @@
   </div>
 </template>
 <script>
-  export default {
-    name: 'n-progress',
-    props: {
-      striped: Boolean,
-      showValue: Boolean,
-      animated: Boolean,
-      label: String,
-      height: {
-        type: Number,
-        default: 1
-      },
-      type: {
-        type: String,
-        default: 'default'
-      },
-      value: {
-        type: Number,
-        default: 0,
-        validator: (value) => {
-          return value >= 0 && value <= 100
-        }
-      }
+export default {
+  name: 'n-progress',
+  props: {
+    striped: Boolean,
+    showValue: Boolean,
+    animated: Boolean,
+    label: String,
+    height: {
+      type: Number,
+      default: 1
     },
-    computed: {
-      computedClasses() {
-        return [{'progress-bar-striped': this.striped}, {'progress-bar-animated': this.animated}]
+    type: {
+      type: String,
+      default: 'default'
+    },
+    value: {
+      type: Number,
+      default: 0,
+      validator: value => {
+        return value >= 0 && value <= 100;
       }
     }
+  },
+  computed: {
+    computedClasses() {
+      return [
+        { 'progress-bar-striped': this.striped },
+        { 'progress-bar-animated': this.animated }
+      ];
+    }
   }
+};
 </script>
 <style>
 </style>

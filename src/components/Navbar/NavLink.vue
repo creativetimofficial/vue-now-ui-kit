@@ -7,28 +7,28 @@
     </component>
 </template>
 <script>
-  export default {
-    name: 'nav-link',
-    inject: ['close'],
-    props: {
-      to: {
-        type: [String, Object],
-        default: undefined
+export default {
+  name: 'nav-link',
+  inject: ['close'],
+  props: {
+    to: {
+      type: [String, Object],
+      default: undefined
+    }
+  },
+  computed: {
+    componentType() {
+      return this.to ? 'router-link' : 'a';
+    }
+  },
+  methods: {
+    closeNav() {
+      if (this.close) {
+        this.close();
       }
-    },
-    computed: {
-      componentType(){
-        return this.to ? 'router-link' : 'a'
-      }
-    },
-    methods: {
-      closeNav() {
-        if (this.close) {
-          this.close();
-        }
-      }
-    },
+    }
   }
+};
 </script>
 <style>
 </style>

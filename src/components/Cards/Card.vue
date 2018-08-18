@@ -39,22 +39,22 @@
   </div>
 </template>
 <script>
-  export default {
-    name: 'card',
-    props: {
-      type: String,
-      title: String,
-      subTitle: String,
-      category: String,
-      color: String,
-      description: String,
-      noFooterLine: Boolean,
-      plain: Boolean,
-      raised: Boolean,
-      cardBodyClasses: [String, Object, Array],
-      headerClasses: [String, Object, Array]
-    }
+export default {
+  name: 'card',
+  props: {
+    type: String,
+    title: String,
+    subTitle: String,
+    category: String,
+    color: String,
+    description: String,
+    noFooterLine: Boolean,
+    plain: Boolean,
+    raised: Boolean,
+    cardBodyClasses: [String, Object, Array],
+    headerClasses: [String, Object, Array]
   }
+};
 </script>
 <style>
 </style>
