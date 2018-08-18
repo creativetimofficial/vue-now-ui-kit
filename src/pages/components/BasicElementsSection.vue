@@ -115,41 +115,48 @@
     </div>
 </template>
 <script>
-  import { Button, Checkbox, Radio, FormGroupInput, Slider, Switch } from '@/components';
+import {
+  Button,
+  Checkbox,
+  Radio,
+  FormGroupInput,
+  Slider,
+  Switch
+} from '@/components';
 
-  export default {
-    components: {
-      [Button.name]: Button,
-      [Checkbox.name]: Checkbox,
-      [Radio.name]: Radio,
-      [FormGroupInput.name]: FormGroupInput,
-      [Switch.name]: Switch,
-      [Option.name]: Option,
-      Slider
-    },
-    data() {
-      return {
-        radios: {
-          radioOn: '2',
-          radioOff: '2'
-        },
-        checkboxes: {
-          unchecked: false,
-          checked: true,
-          disabledUnchecked: false,
-          disabledChecked: true
-        },
-        switches: {
-          defaultOn: true,
-          defaultOff: false
-        },
-        sliders: {
-          simple: 30,
-          rangeSlider: [20, 60]
-        }
+export default {
+  components: {
+    [Button.name]: Button,
+    [Checkbox.name]: Checkbox,
+    [Radio.name]: Radio,
+    [FormGroupInput.name]: FormGroupInput,
+    [Switch.name]: Switch,
+    [Option.name]: Option,
+    Slider
+  },
+  data() {
+    return {
+      radios: {
+        radioOn: '2',
+        radioOff: '2'
+      },
+      checkboxes: {
+        unchecked: false,
+        checked: true,
+        disabledUnchecked: false,
+        disabledChecked: true
+      },
+      switches: {
+        defaultOn: true,
+        defaultOff: false
+      },
+      sliders: {
+        simple: 30,
+        rangeSlider: [20, 60]
       }
-    }
+    };
   }
+};
 </script>
 <style>
 </style>

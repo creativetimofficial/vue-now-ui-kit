@@ -51,15 +51,15 @@
     </div>
 </template>
 <script>
-  import { Card, FormGroupInput, Button } from '@/components';
+import { Card, FormGroupInput, Button } from '@/components';
 
-  export default {
-    components: {
-      Card,
-      [Button.name]: Button,
-      [FormGroupInput.name]: FormGroupInput
-    }
+export default {
+  components: {
+    Card,
+    [Button.name]: Button,
+    [FormGroupInput.name]: FormGroupInput
   }
+};
 </script>
 <style>
 </style>

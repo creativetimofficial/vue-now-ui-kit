@@ -34,12 +34,12 @@
     </div>
 </template>
 <script>
-    import {Alert} from '@/components';
-    export default {
-      components: {
-        Alert
-      }
-    }
+import { Alert } from '@/components';
+export default {
+  components: {
+    Alert
+  }
+};
 </script>
 <style>
 </style>

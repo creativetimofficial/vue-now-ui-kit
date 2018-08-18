@@ -129,20 +129,20 @@
     </div>
 </template>
 <script>
-  import { Card, Button } from '@/components';
+import { Card, Button } from '@/components';
 
-  export default {
-    components: {
-      Card,
-      [Button.name]: Button
-    }
+export default {
+  components: {
+    Card,
+    [Button.name]: Button
   }
+};
 </script>
 <style>
-    .checkbox-cell {
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.checkbox-cell {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>

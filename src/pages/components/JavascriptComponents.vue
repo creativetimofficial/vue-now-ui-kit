@@ -138,40 +138,40 @@
     </div>
 </template>
 <script>
-  import { Card, Button, Modal, FormGroupInput } from '@/components';
-  import { Popover, Tooltip, DatePicker } from 'element-ui';
+import { Card, Button, Modal, FormGroupInput } from '@/components';
+import { Popover, Tooltip, DatePicker } from 'element-ui';
 
-  export default {
-    components: {
-      Card,
-      Modal,
-      [Button.name]: Button,
-      [Popover.name]: Popover,
-      [Tooltip.name]: Tooltip,
-      [DatePicker.name]: DatePicker,
-      [FormGroupInput.name]: FormGroupInput
-    },
-    data() {
-      return {
-        modals: {
-          classic: false,
-          mini: false
-        },
-        pickers: {
-          datePicker: '',
-        }
+export default {
+  components: {
+    Card,
+    Modal,
+    [Button.name]: Button,
+    [Popover.name]: Popover,
+    [Tooltip.name]: Tooltip,
+    [DatePicker.name]: DatePicker,
+    [FormGroupInput.name]: FormGroupInput
+  },
+  data() {
+    return {
+      modals: {
+        classic: false,
+        mini: false
+      },
+      pickers: {
+        datePicker: ''
       }
-    }
+    };
   }
+};
 </script>
 <style lang="scss">
-    #javascriptComponents {
-        .modal-buttons,
-        .popover-buttons,
-        .tooltip-buttons{
-            .btn + .btn {
-                margin-left: 3px;
-            }
-        }
+#javascriptComponents {
+  .modal-buttons,
+  .popover-buttons,
+  .tooltip-buttons {
+    .btn + .btn {
+      margin-left: 3px;
     }
+  }
+}
 </style>

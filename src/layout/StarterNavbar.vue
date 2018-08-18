@@ -27,21 +27,20 @@
 </template>
 
 <script>
-  import { DropDown, NavbarToggleButton, Navbar, NavLink } from '@/components';
-  import { Popover } from 'element-ui'
+import { DropDown, NavbarToggleButton, Navbar, NavLink } from '@/components';
+import { Popover } from 'element-ui';
 
-  export default {
-    name: 'main-navbar',
-    components: {
-      DropDown,
-      Navbar,
-      NavbarToggleButton,
-      NavLink,
-      [Popover.name]: Popover
-    }
+export default {
+  name: 'main-navbar',
+  components: {
+    DropDown,
+    Navbar,
+    NavbarToggleButton,
+    NavLink,
+    [Popover.name]: Popover
   }
+};
 </script>
 
 <style scoped>
-
 </style>

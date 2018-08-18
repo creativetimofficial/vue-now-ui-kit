@@ -123,18 +123,18 @@
     </div>
 </template>
 <script>
-    import {Card, Tabs, TabPane} from '@/components';
+import { Card, Tabs, TabPane } from '@/components';
 
-    export default {
-        components: {
-            Card,
-            Tabs,
-            TabPane
-        }
-    }
+export default {
+  components: {
+    Card,
+    Tabs,
+    TabPane
+  }
+};
 </script>
 <style>
-    .tab-content.tab-content-padding {
-        padding: 20px;
-    }
+.tab-content.tab-content-padding {
+  padding: 20px;
+}
 </style>

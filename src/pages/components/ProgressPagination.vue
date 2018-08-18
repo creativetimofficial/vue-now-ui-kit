@@ -52,26 +52,26 @@
 
 </template>
 <script>
-  import { Progress, Pagination, Badge, Tabs, TabPane } from '@/components';
+import { Progress, Pagination, Badge, Tabs, TabPane } from '@/components';
 
-  export default {
-    components: {
-      [Progress.name]: Progress,
-      [Pagination.name]: Pagination,
-      Badge,
-      Tabs,
-      TabPane
-    },
-    data() {
-      return {
-        pagination: {
-          simple: 1,
-          default: 2,
-          full: 3
-        }
+export default {
+  components: {
+    [Progress.name]: Progress,
+    [Pagination.name]: Pagination,
+    Badge,
+    Tabs,
+    TabPane
+  },
+  data() {
+    return {
+      pagination: {
+        simple: 1,
+        default: 2,
+        full: 3
       }
-    }
+    };
   }
+};
 </script>
 <style>
 </style>
