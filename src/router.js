@@ -15,18 +15,27 @@ export default new Router({
       name: "index",
       components: {default: Index, header: MainNavbar, footer: MainFooter},
       props: {
-        header: {colorOnScroll: 400, transparent: true}
+        header: {colorOnScroll: 400},
+        footer: {backgroundColor: 'black'}
       }
     },
     {
       path: "/login",
       name: "login",
-      components: {default: Login, header: MainNavbar, footer: MainFooter}
+      components: {default: Login, header: MainNavbar, footer: MainFooter},
+      props: {
+        header: {colorOnScroll: 400},
+        footer: {backgroundColor: 'black'}
+      }
     },
     {
       path: "/profile",
       name: "profile",
-      components: {default: Profile, header: MainNavbar, footer: MainFooter}
+      components: {default: Profile, header: MainNavbar, footer: MainFooter},
+      props: {
+        header: {colorOnScroll: 400},
+        footer: {backgroundColor: 'black'}
+      }
     }
   ]
 });

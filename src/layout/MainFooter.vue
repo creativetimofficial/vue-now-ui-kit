@@ -20,11 +20,6 @@
                             Blog
                         </a>
                     </li>
-                    <li>
-                        <a href="https://www.creative-tim.com/license">
-                            License
-                        </a>
-                    </li>
                 </ul>
             </nav>
             <div class="copyright">

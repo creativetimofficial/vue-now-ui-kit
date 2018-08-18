@@ -1,5 +1,6 @@
 <template>
     <navbar position="fixed"
+            type="primary"
             :transparent="transparent"
             :color-on-scroll="colorOnScroll"
             menu-classes="ml-auto">

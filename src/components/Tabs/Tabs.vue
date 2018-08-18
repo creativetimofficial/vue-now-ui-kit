@@ -30,7 +30,7 @@
              @click.prevent="activateTab(tab)"
              :aria-expanded="tab.active"
              class="nav-link"
-             :class="{active: tab.active}">
+             :class="{active: tab.active, disabled: tab.disabled}">
             <tab-item-content :tab="tab">
             </tab-item-content>
           </a>
@@ -118,6 +118,9 @@
         }
       },
       activateTab(tab) {
+        if(tab.disabled) {
+          return;
+        }
         if (this.handleClick) {
           this.handleClick(tab)
         }

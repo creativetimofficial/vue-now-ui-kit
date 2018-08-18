@@ -1,0 +1,19 @@
+.el-tooltip__popper{
+  @extend .tooltip-inner;
+  border: none !important;
+}
+
+.el-tooltip__popper.is-dark{
+  background-color: $black-color;
+  .popper__arrow,
+  .popper__arrow::after{
+    border-top-color: $black-color;
+  }
+}
+
+.el-tooltip__popper.is-light{
+  .popper__arrow,
+  .popper__arrow::after{
+    border-top-color: white !important;
+  }
+}

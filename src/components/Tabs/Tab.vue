@@ -10,7 +10,11 @@
 <script>
   export default {
     name: 'tab-pane',
-    props: ['label', 'id'],
+    props: {
+      label: String,
+      id: String,
+      disabled: Boolean
+    },
     inject: ['addTab', 'removeTab'],
     data(){
       return {
