@@ -6918,6 +6918,10 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vue-analytics@^5.13.0:
+  version "5.13.0"
+  resolved "https://registry.yarnpkg.com/vue-analytics/-/vue-analytics-5.13.0.tgz#eead4af80ae12120cab7ca61b66422d47f280ef8"
+
 vue-eslint-parser@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-2.0.3.tgz#c268c96c6d94cfe3d938a5f7593959b0ca3360d1"

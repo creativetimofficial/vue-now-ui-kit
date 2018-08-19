@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import VueAnalytics from 'vue-analytics';
 import Router from 'vue-router';
 import Index from './pages/Index.vue';
 import Landing from './pages/Landing.vue';
@@ -9,7 +10,7 @@ import MainFooter from './layout/MainFooter.vue';
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -55,3 +56,13 @@ export default new Router({
     }
   }
 });
+
+Vue.use(VueAnalytics, {
+  id: 'UA-46172202-9',
+  router,
+  autoTracking: {
+    pageviewOnLoad: false
+  }
+});
+
+export default router;
