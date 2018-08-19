@@ -5,6 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:docs": "cd docs && npm run build:docs && cd ..",
+    "build:all": "npm run build && npm run build:docs",
+    "deploy": "npm run build:all && sudo gh-pages -d dist",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
