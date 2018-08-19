@@ -1,17 +1,22 @@
 <template>
-    <nav :class="classes" class="navbar navbar-expand-lg">
+    <nav :class="classes" class="navbar">
         <div class="container">
             <div class="navbar-translate">
                 <slot v-bind="slotData"></slot>
                 <navbar-toggle-button :toggled="showMenu" @click.native.stop="toggle"></navbar-toggle-button>
             </div>
-            <div class="collapse navbar-collapse show"
+            <div class="navbar-collapse collapse"
+                 v-click-outside="close"
+                 :style="menuImage ? `background: url(${menuImage}) 0% 0% / cover;` : ''"
+                 :class="[{show: showMenu}, {'has-image': menuImage}, navMenuClasses]"
                  v-if="$slots['navbar-menu'] || $scopedSlots['navbar-menu']"
                  data-color="orange"
                  id="navigation">
-                <ul class="navbar-nav" :class="menuClasses" v-click-outside="close">
+                <slot name="before-menu"></slot>
+                <ul class="navbar-nav" :class="menuClasses">
                     <slot name="navbar-menu" v-bind="slotData"></slot>
                 </ul>
+                <slot name="after-menu"></slot>
             </div>
         </div>
     </nav>
@@ -64,6 +69,17 @@ export default {
           'info'
         ].includes(value);
       }
+    },
+    navMenuClasses: {
+      type: String,
+      default: ''
+    },
+    menuImage: {
+      type: String
+    },
+    expand: {
+      type: [String, Boolean],
+      default: 'lg'
     }
   },
   provide() {
@@ -104,6 +120,7 @@ export default {
       return [
         { 'navbar-transparent': this.transparent || colorOnScrollTransparent },
         { [color]: !this.transparent && this.colorOnScroll === 0 },
+        this.expand ? `navbar-expand-${this.expand}` : '',
         navPosition,
         this.extraNavClasses
       ];
@@ -111,13 +128,13 @@ export default {
   },
   methods: {
     setNav(value) {
-      let docClasess = document.body.classList;
+      let htmlClasses = document.querySelector('html').classList;
       if (value) {
-        docClasess.add('nav-open');
+        htmlClasses.add('nav-open');
       } else {
-        docClasess.remove('nav-open');
+        htmlClasses.remove('nav-open');
       }
-      let isOpen = docClasess.contains('nav-open');
+      let isOpen = htmlClasses.contains('nav-open');
       let eventToTrigger = isOpen ? 'open' : 'close';
       this.showMenu = isOpen;
       this.$emit(eventToTrigger);
@@ -129,7 +146,9 @@ export default {
       this.setNav(true);
     },
     close() {
-      this.setNav(false);
+      if (this.showMenu) {
+        this.setNav(false);
+      }
     },
     handleScroll() {
       let scrollValue =

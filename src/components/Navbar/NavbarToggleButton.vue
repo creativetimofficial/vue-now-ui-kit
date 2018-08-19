@@ -1,7 +1,7 @@
 <template>
   <button type="button"
           class="navbar-toggler"
-          :class="{toggled: toggled}"
+          :class="[{toggled: toggled}, {collapsed: !toggled}]"
           data-toggle="collapse"
           data-target="#navbar"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
