@@ -1,0 +1,113 @@
+# Typography
+
+Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.
+
+## Headings
+
+All HTML headings, `<h1>` through `<h6>`, are available.
+
+:::demo
+```html
+<template>
+ <div>
+    <h1>h1. Bootstrap heading</h1>
+    <h2>h2. Bootstrap heading</h2>
+    <h3>h3. Bootstrap heading</h3>
+    <h4>h4. Bootstrap heading</h4>
+    <h5>h5. Bootstrap heading</h5>
+    <h6>h6. Bootstrap heading</h6>
+ </div>
+</template>
+```
+:::
+
+`.h1` through `.h6` classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.
+
+:::demo
+```html
+<template>
+ <div>
+    <p class="h1">h1. Bootstrap heading</p>
+    <p class="h2">h2. Bootstrap heading</p>
+    <p class="h3">h3. Bootstrap heading</p>
+    <p class="h4">h4. Bootstrap heading</p>
+    <p class="h5">h5. Bootstrap heading</p>
+    <p class="h6">h6. Bootstrap heading</p>
+ </div>
+</template>
+```
+:::
+
+### Customizing Heading
+
+Use the included utility classes to recreate the small secondary heading text from Bootstrap 4
+
+:::demo
+```html
+<template>
+ <div>
+   <h3>
+     Fancy display heading
+     <small class="text-muted">With faded secondary text</small>
+   </h3>
+ </div>
+</template>
+```
+:::
+
+### Blockquotes
+
+For quoting blocks of content from another source within your document. Wrap `<blockquote class="blockquote">` around any HTML as the quote.
+
+:::demo
+```html
+<template>
+ <blockquote class="blockquote">
+   <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+ </blockquote>
+</template>
+```
+:::
+
+### Naming a source
+
+Add a `<footer class="blockquote-footer">` for identifying the source. Wrap the name of the source work in `<cite>`.
+
+:::demo
+```html
+<template>
+<blockquote class="blockquote">
+  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+</template>
+```
+:::
+
+### Alignment
+
+Use text utilities as needed to change the alignment of your blockquote.
+
+:::demo
+```html
+<template>
+<blockquote class="blockquote text-center">
+  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+</template>
+```
+:::
+
+:::demo
+```html
+<template>
+<blockquote class="blockquote text-right">
+  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+</template>
+```
+:::
+
+<p>If you want to see more examples and properties please check the official <a href="https://getbootstrap.com/docs/4.0/content/typography/">Bootstrap Documentation</a></p>

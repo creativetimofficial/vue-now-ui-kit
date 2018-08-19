@@ -1,0 +1,20 @@
+{
+  "name": "vue-material-dashboard-docs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build",
+    "copy:docs": "ncp .vuepress/dist ../dist/documentation",
+    "build:docs": "vuepress build && npm run copy:docs"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "markdown-it-container": "^2.0.0",
+    "ncp": "^2.0.0",
+    "vuepress": "^0.13.1",
+    "webpack": "^4.6.0"
+  },
+  "author": "critijora <joracristi@gmail.com>",
+  "description": "Vue Now UI Kit PRO"
+}

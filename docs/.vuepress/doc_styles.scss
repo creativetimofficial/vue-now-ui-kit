@@ -1,0 +1,58 @@
+$box-shadow: 0 10px 20px -8px rgba(0,0,0,.15);
+$border-color: rgba(0,0,0,.05);
+table {
+  width: 100%;
+  box-shadow: $box-shadow;
+  display: table;
+  margin: 0;
+}
+th {
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,.05);
+  background: #fafafa;
+}
+tr {
+  border-top: 1px solid #dfe2e5;
+}
+td {
+  border: 1px solid rgba(0,0,0,.05)
+}
+.el-picker-panel__content {
+  width: 100%;
+}
+.el-date-table {
+  box-shadow: none;
+  width: 100%;
+  td, tr, th {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.demo-block {
+  margin-top: 30px;
+  box-shadow: $box-shadow;
+  border: 1px solid $border-color;
+}
+
+.navbar {
+  position: relative;
+
+  &.z-index-high {
+    z-index: 21;
+  }
+}
+
+.demo-block .page-header:before {
+  background-color: inherit;
+}
+
+[class~="a.b"] .now-ui-icons {
+  display: initial;
+}
+
+pre code,
+pre code .token {
+  line-height: 19px;
+  font-size: 14px !important;
+}
