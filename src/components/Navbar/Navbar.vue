@@ -146,7 +146,7 @@ export default {
       this.setNav(true);
     },
     close() {
-      if(this.showMenu) {
+      if (this.showMenu) {
         this.setNav(false);
       }
     },

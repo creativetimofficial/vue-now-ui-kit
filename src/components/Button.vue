@@ -56,7 +56,7 @@ export default {
       return btnClasses;
     }
   },
-  methods:{
+  methods: {
     handleClick(evt) {
       this.$emit('click', evt);
     }
