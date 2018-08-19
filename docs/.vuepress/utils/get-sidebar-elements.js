@@ -14,6 +14,7 @@ let componentList = [
   'nucleo-icons',
   'parallax',
   'pagination',
+  'popover',
   'progress',
   'radio',
   'slider',

@@ -47,6 +47,17 @@ td {
   background-color: inherit;
 }
 
+.bd-example .sticky-top,
+.bd-example .fixed-top{
+  position: static;
+  margin: -1.5rem -1.5rem 1rem;
+}
+
+.bd-example .fixed-bottom {
+  position: static;
+  margin: 1rem -1.5rem -1.5rem;
+}
+
 [class~="a.b"] .now-ui-icons {
   display: initial;
 }
@@ -55,4 +66,31 @@ pre code,
 pre code .token {
   line-height: 19px;
   font-size: 14px !important;
+}
+
+.nav-item > a:not(.external):hover,
+.nav-item > a:not(.external).router-link-active {
+  margin-bottom: unset;
+  border-bottom: unset;
+  text-decoration: none;
+}
+
+.sidebar-button svg {
+  color: white;
+}
+
+.sidebar-button {
+  top: 0;
+}
+
+.navbar-brand {
+  margin-left: 50px;
+}
+
+.search-box input {
+  width: 10rem !important;
+  left: 1rem;
+  &:focus {
+    left: 1rem;
+  }
 }

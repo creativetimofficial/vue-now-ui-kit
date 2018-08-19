@@ -97,7 +97,122 @@ export default {
 :::tip
  You can change navbar color with the `type` prop.
 :::
-## Colored navbars
+
+Navbar with links
+
+:::demo
+```html
+<template>
+  <navbar type="primary" class="z-index-high">
+   <a class="navbar-brand" href="#">Navbar</a>
+    <template slot="navbar-menu">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </template>
+  </navbar>
+</template>
+
+<script>
+  export default {}
+</script>
+```
+:::
+
+
+You may also utilize dropdowns in your navbar nav.
+Dropdown menus require a wrapping element for positioning, so be sure to use separate and nested elements for
+`.nav-item` and `.nav-link` as shown below.
+
+:::demo
+```html
+<template>
+  <navbar type="primary" class="z-index-high">
+   <a class="navbar-brand" href="#">Navbar</a>
+    <template slot="navbar-menu">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <drop-down tag="li" class="nav-item" title="Dropdown Link">
+       
+       <a class="dropdown-item" href="#">Action</a>
+       <a class="dropdown-item" href="#">Another action</a>
+       <a class="dropdown-item" href="#">Something else here</a>
+      </drop-down>
+    </template>
+  </navbar>
+</template>
+
+<script>
+  export default {}
+</script>
+```
+:::
+
+
+### Forms
+
+Place various form controls and components within a navbar with .form-inline.
+
+:::demo
+```html
+<template>
+  <navbar type="primary" class="z-index-high">
+   <a class="navbar-brand" href="#">Brand</a>
+    <template slot="navbar-menu">
+      <li class="nav-item active">
+          <a href="#pablo" class="nav-link">link</a>
+      </li>
+      <li class="nav-item">
+          <a href="#pablo" class="nav-link">link</a>
+      </li>
+    </template>
+    <form slot="after-menu" class="form-inline ml-auto" data-background-color>
+        <fg-input addon-left-icon="now-ui-icons ui-1_email-85" placeholder="Your Email..."></fg-input>
+    </form>
+  </navbar>
+</template>
+
+<script>
+  export default {}
+</script>
+```
+:::
+
+### How to enable Burger Menu
+
+We created for you a class named `.burger-menu` and once it is applied to the tag body it will transform 
+the navbar like it appears on the responsive mode and when you will open it will come from the right side or left side.
+To make open from left side please add the class `.menu-on-left` also on the body tag.
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    ...
+  </head>
+  <body class="burger-menu">
+    ...
+  </body>
+</html>
+```
+
+### Colored navbars
 
 :::demo
 ```html
@@ -105,8 +220,29 @@ export default {
   <navbar v-for="type in types" :key="type"
           :type="type"
           :transparent="false"
+          menu-classes="ml-auto"
           position="relative">
        <a class="navbar-brand" href="#">{{type}}</a>
+       <template slot="navbar-menu">
+         <li class="nav-item active">
+           <a class="nav-link" href="#pablo">
+             <i class="now-ui-icons objects_globe"></i>
+             <p>Discover</p>
+           </a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#pablo">
+             <i class="now-ui-icons users_circle-08"></i>
+             <p>Profile</p>
+           </a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#pablo">
+             <i class="now-ui-icons ui-1_settings-gear-63"></i>
+             <p>Settings</p>
+           </a>
+         </li>
+        </template>
    </navbar>
 </template>
 
@@ -122,6 +258,93 @@ export default {
 ```
 :::
 
+### Placement
+
+Use our position utilities to place navbars in non-static positions.
+Choose from fixed to the top, fixed to the bottom, or stickied to the top 
+(scrolls with the page until it reaches the top, then stays there). 
+Fixed navbars use `position: fixed`, meaning they’re pulled from the normal flow of 
+the DOM and may require custom CSS (e.g., `padding-top` on the `<body>`) to prevent overlap with other elements.
+
+Also note that `.sticky-top` uses `position: sticky`, which 
+[isn’t fully supported in every browser.](https://caniuse.com/#feat=css-sticky)
+
+
+:::demo
+```html
+<template>
+  <navbar type="primary" class="z-index-high">
+   <a class="navbar-brand" href="#">Default</a>
+  </navbar>
+</template>
+
+<script>
+  export default {}
+</script>
+```
+:::
+
+:::demo
+```html
+<template>
+    <div class="demo-container bd-example">
+     <navbar type="primary" class="fixed-top">
+       <a class="navbar-brand" href="#">Fixed Top</a>
+      </navbar>
+    </div>
+</template>
+
+<script>
+  export default {}
+</script>
+```
+:::
+
+:::demo
+```html
+<template>
+  <div class="demo-container bd-example">
+   <navbar type="primary" class="fixed-bottom">
+     <a class="navbar-brand" href="#">Fixed Bottom</a>
+    </navbar>
+  </div>
+</template>
+
+<script>
+  export default {}
+</script>
+```
+:::
+
+:::demo
+```html
+<template>
+  <div class="demo-container bd-example">
+   <navbar type="primary" class="sticky-top">
+     <a class="navbar-brand" href="#">Sticky Top</a>
+    </navbar>
+  </div>
+</template>
+
+<script>
+  export default {}
+</script>
+```
+:::
+
+
+### Responsive behaviors
+
+Navbars can utilize `.navbar-toggler`, `.navbar-collapse`, and 
+`.navbar-expand{-sm|-md|-lg|-xl}` classes to change when their content collapses behind a button. 
+In combination with other utilities, you can easily choose when to show or hide particular elements.
+These classes can be also added with the help of `expand` prop.
+E.g `expand="md"`
+
+For navbars that never collapse, add the `.navbar-expand` class on the navbar. 
+For navbars that always collapse, don’t add any `.navbar-expand` class.
+Note that we already integrated a toggler button inside our `Navbar` component so you don't have to worry 
+about adding it. It will simply appear on small screens.
 
 ### Navbar Props
 <props-table component-name="navbar"/>

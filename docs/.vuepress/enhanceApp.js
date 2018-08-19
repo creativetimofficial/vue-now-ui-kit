@@ -3,6 +3,7 @@ import lang from 'element-ui/lib/locale/lang/en';
 import locale from 'element-ui/lib/locale';
 import * as Components from '@/components/index'
 import './doc_styles.scss'
+import './docs.css'
 import getElements from './utils/get-sidebar-elements';
 import ElementUI from '../../node_modules/element-ui';
 import KitPlugin from '../../src/plugins/now-ui-kit';

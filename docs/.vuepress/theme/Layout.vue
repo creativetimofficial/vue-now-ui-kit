@@ -1,6 +1,6 @@
 <template>
-    <div class="theme-container ct-documentation">
-        <Navbar></Navbar>
+    <div class="theme-container ct-documentation" :class="pageClasses">
+        <Navbar @toggle-sidebar="toggleSidebar"></Navbar>
         <div
                 class="sidebar-mask"
                 @click="toggleSidebar(false)"
@@ -75,6 +75,15 @@
           this.$localePath
         )
       },
+      pageClasses () {
+        const userPageClass = this.$page.frontmatter.pageClass
+        return [
+          {
+            'sidebar-open': this.isSidebarOpen
+          },
+          userPageClass
+        ]
+      }
     },
     methods: {
       toggleSidebar (to) {

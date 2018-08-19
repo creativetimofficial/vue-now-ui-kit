@@ -2,7 +2,7 @@
     <navbar menu-classes="ml-auto" type="primary" class="main-nav">
         <template slot-scope="{toggle, isToggled}">
             <router-link v-popover:popover1 class="navbar-brand" to="/presentation">
-                Vue Now Ui Kit Pro
+                Vue Now Ui Kit
             </router-link>
             <el-popover
                     ref="popover1"
@@ -12,6 +12,7 @@
                     trigger="hover">
                 <div class="popover-body">Designed by Invision. Coded by Creative Tim</div>
             </el-popover>
+            <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
         </template>
         <template slot="navbar-menu">
             <li class="nav-item">
@@ -29,10 +30,15 @@
 </template>
 <script>
   import SearchBox from '../../node_modules/vuepress/lib/default-theme/SearchBox.vue';
+  import SidebarButton from '../../node_modules/vuepress/lib/default-theme/SidebarButton.vue';
 
   export default {
     components: {
-      SearchBox
+      SearchBox,
+      SidebarButton
+    },
+    mounted() {
+      document.body.classList.add('sidebar-collapse')
     }
   }
 </script>

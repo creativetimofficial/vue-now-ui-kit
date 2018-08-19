@@ -46,6 +46,69 @@ export default {
 ```
 :::
 
+## Customizing prev and next buttons
+
+:::demo
+```html
+<template>
+   <n-pagination :page-count="10" v-model="defaultPagination">
+    <span slot="prev">Previous</span>
+    <span slot="next">Next</span>
+   </n-pagination>
+</template>
+
+<script>
+  export default {
+    data () {
+        return {
+          defaultPagination: 1
+        }
+      }
+  }
+</script>
+```
+:::
+
+## Alignment
+
+Change the alignment of pagination components with flexbox utilities.
+
+:::demo
+```html
+<template>
+   <n-pagination class="justify-content-center" :page-count="10" v-model="defaultPagination"></n-pagination>
+</template>
+
+<script>
+  export default {
+    data () {
+        return {
+          defaultPagination: 1
+        }
+      }
+  }
+</script>
+```
+:::
+
+:::demo
+```html
+<template>
+   <n-pagination class="justify-content-end" :page-count="10" v-model="defaultPagination"></n-pagination>
+</template>
+
+<script>
+  export default {
+    data () {
+        return {
+          defaultPagination: 1
+        }
+      }
+  }
+</script>
+```
+:::
+
 ## Colors
 
 :::demo
