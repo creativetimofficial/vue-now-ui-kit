@@ -6,7 +6,7 @@
             menu-classes="ml-auto">
         <template slot-scope="{toggle, isToggled}">
                 <router-link v-popover:popover1 class="navbar-brand" to="/presentation">
-                    Now Ui Kit Pro
+                    Now Ui Kit
                 </router-link>
                 <el-popover
                         ref="popover1"

@@ -1,5 +1,6 @@
 <template>
   <component :is="tag"
+             @click="handleClick"
              :type="nativeType"
              class="btn"
              :class="classes">
@@ -53,6 +54,11 @@ export default {
         btnClasses.push(`btn-${this.size}`);
       }
       return btnClasses;
+    }
+  },
+  methods:{
+    handleClick(evt) {
+      this.$emit('click', evt);
     }
   }
 };
