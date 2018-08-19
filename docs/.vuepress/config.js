@@ -2,7 +2,7 @@ const markdownParser = require('./markdownParser')
 const path = require('path');
 
 module.exports = {
-  base: process.env.NODE_ENV ? '/vue-now-ui-kit-pro/documentation/' : '',
+  base: process.env.NODE_ENV ? '/vue-now-ui-kit/documentation/' : '',
   markdown: {
     config: markdownParser,
     lineNumbers: true

@@ -19,10 +19,10 @@
                 <a class="nav-link active" href="/"><i class="now-ui-icons text_align-left"></i> Documentation</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://demos.creative-tim.com/vue-now-ui-kit-pro"><i class="now-ui-icons tech_tv"></i> Live Preview</a>
+                <a class="nav-link" href="https://demos.creative-tim.com/vue-now-ui-kit"><i class="now-ui-icons tech_tv"></i> Live Preview</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://github.com/creativetimofficial/ct-vue-now-ui-kit-pro/issues" target="_blank" rel="noopener"><i class="now-ui-icons ui-2_settings-90"></i> Report Issue</a>
+                <a class="nav-link" href="https://github.com/creativetimofficial/ct-vue-now-ui-kit/issues" target="_blank" rel="noopener"><i class="now-ui-icons ui-2_settings-90"></i> Report Issue</a>
             </li>
             <SearchBox v-if="$site.themeConfig.search !== false"/>
         </template>
