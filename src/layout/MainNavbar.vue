@@ -5,7 +5,7 @@
             :color-on-scroll="colorOnScroll"
             menu-classes="ml-auto">
         <template slot-scope="{toggle, isToggled}">
-                <router-link v-popover:popover1 class="navbar-brand" to="/presentation">
+                <router-link v-popover:popover1 class="navbar-brand" to="/">
                     Now Ui Kit
                 </router-link>
                 <el-popover
@@ -18,6 +18,12 @@
                 </el-popover>
         </template>
         <template slot="navbar-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.creative-tim.com/product/vue-now-ui-kit" target="_blank">
+                    <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+                    <p>Download</p>
+                </a>
+            </li>
             <drop-down tag="li" title="Components" icon="now-ui-icons design_app" class="nav-item">
                 <nav-link to="/">
                     <i class="now-ui-icons business_chart-pie-36"></i> All components
