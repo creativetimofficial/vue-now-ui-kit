@@ -1,9 +1,9 @@
 <template>
     <navbar menu-classes="ml-auto" type="primary" class="main-nav">
         <template slot-scope="{toggle, isToggled}">
-            <router-link v-popover:popover1 class="navbar-brand" to="/presentation">
+            <a v-popover:popover1 class="navbar-brand" href="#">
                 Vue Now Ui Kit
-            </router-link>
+            </a>
             <el-popover
                     ref="popover1"
                     popper-class="popover"
