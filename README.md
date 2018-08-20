@@ -1,6 +1,6 @@
 # [Vue Now UI Kit](http://demos.creative-tim.com/vue-now-ui-kit) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
-![alt text](https://s3.amazonaws.com/creativetim_bucket/products/56/original/opt_nuk_thumbnail.jpg?1466002372 "Now UI Kit")
+![alt text](https://s3.amazonaws.com/creativetim_bucket/products/94/original/opt_nuk_vue_thumbnail.jpg "Now UI Kit")
 
 
 **[Vue Now UI Kit](http://demos.creative-tim.com/vue-now-ui-kit)** is a responsive Bootstrap 4 kit provided for free by Invision and Creative Tim. It is a beautiful cross-platform UI kit featuring over 50 elements and 3 templates.
