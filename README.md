@@ -44,9 +44,9 @@ You can find the Github Repo here.
 
 ## Versions
 
-[<img src="assets/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/now-ui-kit)
-[<img src="assets/github/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-now-ui-kit)
-[<img src="assets/github/angular.png" width="60" height="60" />](https://www.creative-tim.com/product/now-ui-kit-angular)
+[<img src="src/assets/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/now-ui-kit)
+[<img src="src/assets/github/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-now-ui-kit)
+[<img src="src/assets/github/angular.png" width="60" height="60" />](https://www.creative-tim.com/product/now-ui-kit-angular)
 
 
 | HTML | Vue | Angular |
@@ -57,7 +57,7 @@ You can find the Github Repo here.
 
 | Components | Landing | Profile | Login |
 | --- | --- | --- | --- |
-| [![Components](assets/github/components.png)](https://demos.creative-tim.com/vue-now-ui-kit/#/) | [![Landing page](assets/github/landing.png)](https://demos.creative-tim.com/vue-now-ui-kit/#/landing) | [![Profile page ](assets/github/profile.png)](https://demos.creative-tim.com/vue-now-ui-kit/#/profile) | [![Login Page](assets/github/login.png)](https://demos.creative-tim.com/vue-now-ui-kit/#/login)
+| [![Components](src/assets/github/components.png)](https://demos.creative-tim.com/vue-now-ui-kit/#/) | [![Landing page](src/assets/github/landing.png)](https://demos.creative-tim.com/vue-now-ui-kit/#/landing) | [![Profile page ](src/assets/github/profile.png)](https://demos.creative-tim.com/vue-now-ui-kit/#/profile) | [![Login Page](src/assets/github/login.png)](https://demos.creative-tim.com/vue-now-ui-kit/#/login)
 
 [View More](https://demos.creative-tim.com/vue-now-ui-kit).
 
@@ -101,7 +101,7 @@ Vue Now Ui Kit
 
 At present, we officially aim to support the last two versions of the following browsers:
 
-<img src="assets/github/chrome.png" width="64" height="64"> <img src="assets/github/firefox.png" width="64" height="64"> <img src="assets/github/edge.png" width="64" height="64"> <img src="assets/github/safari.png" width="64" height="64"> <img src="assets/github/opera.png" width="64" height="64">
+<img src="src/assets/github/chrome.png" width="64" height="64"> <img src="src/assets/github/firefox.png" width="64" height="64"> <img src="src/assets/github/edge.png" width="64" height="64"> <img src="src/assets/github/safari.png" width="64" height="64"> <img src="src/assets/github/opera.png" width="64" height="64">
 
 
 ## Resources
