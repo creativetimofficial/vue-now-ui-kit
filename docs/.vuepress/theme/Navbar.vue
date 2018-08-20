@@ -19,7 +19,8 @@
                 <a class="nav-link" href="https://demos.creative-tim.com/vue-now-ui-kit"><i class="now-ui-icons tech_tv"></i> Live Preview</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://github.com/creativetimofficial/vue-now-ui-kit/issues" target="_blank" rel="noopener"><i class="now-ui-icons ui-2_settings-90"></i> Report Issue</a>
+                <a class="nav-link" href="https://github.com/creativetimofficial/vue-now-ui-kit" target="_blank" rel="noopener">
+                    <i class="now-ui-icons emoticons_satisfied"></i> Help with a Star</a>
             </li>
             <SearchBox v-if="$site.themeConfig.search !== false"/>
         </template>
