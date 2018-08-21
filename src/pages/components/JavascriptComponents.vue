@@ -19,7 +19,7 @@
                             popper-class="popover popover-primary"
                             placement="left"
                             width="200"
-                            trigger="hover">
+                            trigger="click">
                         <h3 class="popover-header">Popover On Left</h3>
                         <div class="popover-body">Here will be some very useful information about his popover.</div>
                     </el-popover>
@@ -29,7 +29,7 @@
                             popper-class="popover popover-success"
                             placement="top-start"
                             width="200"
-                            trigger="hover">
+                            trigger="click">
                         <h3 class="popover-header">Popover On Top</h3>
                         <div class="popover-body">Here will be some very useful information about his popover.</div>
                     </el-popover>
@@ -39,7 +39,7 @@
                             popper-class="popover popover-danger"
                             placement="right"
                             width="200"
-                            trigger="hover">
+                            trigger="click">
                         <h3 class="popover-header">Popover On Right</h3>
                         <div class="popover-body">Here will be some very useful information about his popover.</div>
                     </el-popover>
@@ -49,7 +49,7 @@
                             popper-class="popover"
                             placement="bottom"
                             width="200"
-                            trigger="hover">
+                            trigger="click">
                         <h3 class="popover-header">Popover On Bottom</h3>
                         <div class="popover-body">Here will be some very useful information about his popover.</div>
                     </el-popover>

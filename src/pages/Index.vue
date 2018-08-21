@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div>
         <div class="page-header clear-filter" filter-color="orange">
             <parallax class="page-header-image"
                       style="background-image:url('img/header.jpg')">
