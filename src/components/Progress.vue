@@ -1,23 +1,22 @@
 <template>
-  <div class="progress-container progress-base"
-       :class="`progress-${type}`">
+  <div class="progress-container progress-base" :class="`progress-${type}`">
     <span class="progress-badge">
       <slot name="label">
-        {{label}}
+        {{ label }}
       </slot>
     </span>
     <div class="progress" :style="`height: ${height}px`">
-      <div class="progress-bar"
-           :class="computedClasses"
-           role="progressbar"
-           :aria-valuenow="value"
-           aria-valuemin="0"
-           aria-valuemax="100"
-           :style="`width: ${value}%;`">
+      <div
+        class="progress-bar"
+        :class="computedClasses"
+        role="progressbar"
+        :aria-valuenow="value"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        :style="`width: ${value}%;`"
+      >
         <slot>
-            <span class="progress-value" v-if="showValue">
-               {{value}}%
-            </span>
+          <span class="progress-value" v-if="showValue"> {{ value }}% </span>
         </slot>
       </div>
     </div>
@@ -57,5 +56,4 @@ export default {
   }
 };
 </script>
-<style>
-</style>
+<style></style>

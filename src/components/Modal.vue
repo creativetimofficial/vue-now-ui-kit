@@ -1,44 +1,52 @@
 <template>
-    <SlideYUpTransition :duration="animationDuration">
-        <div class="modal fade"
-             @click.self="closeModal"
-             :class="[{'show d-block': show}, {'d-none': !show}, {'modal-mini': type === 'mini'}]"
-             v-show="show"
-             tabindex="-1"
-             role="dialog"
-             :aria-hidden="!show">
-
-            <div class="modal-dialog"
-                 :class="[{'modal-notice': type === 'notice'}, modalClasses]">
-                <div class="modal-content">
-                    <slot name="base-content">
-                        <div class="modal-header" :class="headerClasses">
-                            <slot name="close-button">
-                                <button type="button"
-                                        v-if="showClose"
-                                        @click="closeModal"
-                                        class="close"
-                                        data-dismiss="modal"
-                                        :aria-hidden="!show">
-                                    <i class="now-ui-icons ui-1_simple-remove"></i>
-                                </button>
-                            </slot>
-                            <slot name="header"></slot>
-                        </div>
-
-                        <div class="modal-body" :class="bodyClasses">
-                            <slot></slot>
-                        </div>
-
-                        <div class="modal-footer" :class="footerClasses">
-                            <slot name="footer"></slot>
-                        </div>
-                    </slot>
-                </div>
+  <SlideYUpTransition :duration="animationDuration">
+    <div
+      class="modal fade"
+      @click.self="closeModal"
+      :class="[
+        { 'show d-block': show },
+        { 'd-none': !show },
+        { 'modal-mini': type === 'mini' }
+      ]"
+      v-show="show"
+      tabindex="-1"
+      role="dialog"
+      :aria-hidden="!show"
+    >
+      <div
+        class="modal-dialog"
+        :class="[{ 'modal-notice': type === 'notice' }, modalClasses]"
+      >
+        <div class="modal-content">
+          <slot name="base-content">
+            <div class="modal-header" :class="headerClasses">
+              <slot name="close-button">
+                <button
+                  type="button"
+                  v-if="showClose"
+                  @click="closeModal"
+                  class="close"
+                  data-dismiss="modal"
+                  :aria-hidden="!show"
+                >
+                  <i class="now-ui-icons ui-1_simple-remove"></i>
+                </button>
+              </slot>
+              <slot name="header"></slot>
             </div>
 
+            <div class="modal-body" :class="bodyClasses">
+              <slot></slot>
+            </div>
+
+            <div class="modal-footer" :class="footerClasses">
+              <slot name="footer"></slot>
+            </div>
+          </slot>
         </div>
-    </SlideYUpTransition>
+      </div>
+    </div>
+  </SlideYUpTransition>
 </template>
 <script>
 import { SlideYUpTransition } from 'vue2-transitions';

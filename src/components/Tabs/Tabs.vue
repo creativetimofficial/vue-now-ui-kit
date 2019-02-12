@@ -1,46 +1,57 @@
 <template>
   <div>
-    <div :class="
-        [{'col-md-4': vertical && !tabNavWrapperClasses},
-        {'col-12': centered && !tabNavWrapperClasses},
-        tabNavWrapperClasses]">
-      <ul class="nav"
+    <div
+      :class="[
+        { 'col-md-4': vertical && !tabNavWrapperClasses },
+        { 'col-12': centered && !tabNavWrapperClasses },
+        tabNavWrapperClasses
+      ]"
+    >
+      <ul
+        class="nav"
+        role="tablist"
+        v-bind="$attrs"
+        :class="[
+          tabTypeClass,
+          { 'nav-pills-icons': icons },
+          { 'nav-pills': pills },
+          { 'nav-tabs': !pills },
+          { 'flex-column': vertical },
+          { 'justify-content-center': centered },
+          tabNavClasses
+        ]"
+      >
+        <li
+          v-for="tab in tabs"
+          class="nav-item active"
+          data-toggle="tab"
           role="tablist"
-          v-bind="$attrs"
-          :class="
-          [ tabTypeClass,
-           {'nav-pills-icons': icons},
-           {'nav-pills': pills},
-           {'nav-tabs': !pills},
-           {'flex-column': vertical},
-           {'justify-content-center': centered},
-           tabNavClasses
-          ]">
-
-        <li v-for="tab in tabs"
-            class="nav-item active"
+          aria-expanded="true"
+          :key="tab.id"
+        >
+          <a
             data-toggle="tab"
             role="tablist"
-            aria-expanded="true"
-            :key="tab.id">
-
-          <a data-toggle="tab"
-             role="tablist"
-             :href="`#${tab.id}`"
-             @click.prevent="activateTab(tab)"
-             :aria-expanded="tab.active"
-             class="nav-link"
-             :class="{active: tab.active, disabled: tab.disabled}">
-            <tab-item-content :tab="tab">
-            </tab-item-content>
+            :href="`#${tab.id}`"
+            @click.prevent="activateTab(tab)"
+            :aria-expanded="tab.active"
+            class="nav-link"
+            :class="{ active: tab.active, disabled: tab.disabled }"
+          >
+            <tab-item-content :tab="tab"> </tab-item-content>
           </a>
-
         </li>
-
       </ul>
     </div>
-    <div class="tab-content"
-         :class="[{'tab-space': !vertical && !noContentSpace}, 'text-left', {'col-md-8': vertical && !tabContentClasses}, tabContentClasses]">
+    <div
+      class="tab-content"
+      :class="[
+        { 'tab-space': !vertical && !noContentSpace },
+        'text-left',
+        { 'col-md-8': vertical && !tabContentClasses },
+        tabContentClasses
+      ]"
+    >
       <slot></slot>
     </div>
   </div>

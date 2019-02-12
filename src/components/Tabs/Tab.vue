@@ -1,9 +1,11 @@
 <template>
-  <div class="tab-pane"
-       v-show="active"
-       :id="id || label"
-       :class="{active: active}"
-       :aria-expanded="active">
+  <div
+    class="tab-pane"
+    v-show="active"
+    :id="id || label"
+    :class="{ active: active }"
+    :aria-expanded="active"
+  >
     <slot></slot>
   </div>
 </template>
@@ -32,5 +34,4 @@ export default {
   }
 };
 </script>
-<style>
-</style>
+<style></style>

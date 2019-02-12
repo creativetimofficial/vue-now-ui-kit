@@ -1,9 +1,11 @@
 <template>
-  <component :is="tag"
-             @click="handleClick"
-             :type="nativeType"
-             class="btn"
-             :class="classes">
+  <component
+    :is="tag"
+    @click="handleClick"
+    :type="nativeType"
+    class="btn"
+    :class="classes"
+  >
     <span class="btn-label" v-if="$slots.label">
       <slot name="label"></slot>
     </span>
@@ -63,5 +65,4 @@ export default {
   }
 };
 </script>
-<style>
-</style>
+<style></style>

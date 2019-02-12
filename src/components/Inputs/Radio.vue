@@ -1,14 +1,18 @@
 <template>
-  <div class="form-check form-check-radio" :class="[inlineClass, {disabled: disabled}]">
+  <div
+    class="form-check form-check-radio"
+    :class="[inlineClass, { disabled: disabled }]"
+  >
     <label :for="cbId" class="form-check-label">
-      <input :id="cbId"
-             class="form-check-input"
-             type="radio"
-             :disabled="disabled"
-             :value="label"
-             v-model="model" />
-      <span class="form-check-sign">
-      </span>
+      <input
+        :id="cbId"
+        class="form-check-input"
+        type="radio"
+        :disabled="disabled"
+        :value="label"
+        v-model="model"
+      />
+      <span class="form-check-sign"> </span>
       <slot></slot>
     </label>
   </div>

@@ -1,10 +1,12 @@
 <template>
-    <component :is="componentType"
-               :to="to"
-               class="dropdown-item"
-               @click.native.stop="closeNav">
-        <slot></slot>
-    </component>
+  <component
+    :is="componentType"
+    :to="to"
+    class="dropdown-item"
+    @click.native.stop="closeNav"
+  >
+    <slot></slot>
+  </component>
 </template>
 <script>
 export default {
@@ -30,5 +32,4 @@ export default {
   }
 };
 </script>
-<style>
-</style>
+<style></style>
