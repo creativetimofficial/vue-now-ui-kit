@@ -39,6 +39,10 @@
       &:focus{
         background-color: $opacity-gray-3;
       }
+      &.active {
+        background-color: $primary-color;
+        color: white;
+      }
 
       &.disabled,
       &:disabled{

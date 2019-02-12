@@ -1,6 +1,6 @@
 {
   "name": "vue-now-ui-kit",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -21,7 +21,6 @@
     "@vue/cli-plugin-babel": "^3.4.0",
     "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
-    "@vue/eslint-config-prettier": "^4.0.1",
     "babel-plugin-component": "^1.1.1",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",

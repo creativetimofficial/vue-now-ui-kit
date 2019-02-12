@@ -55,6 +55,11 @@ export default {
       isOpen: false
     };
   },
+  provide() {
+    return {
+      closeDropDown: this.closeDropDown
+    }
+  },
   methods: {
     toggleDropDown() {
       this.isOpen = !this.isOpen;

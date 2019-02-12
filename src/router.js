@@ -10,6 +10,7 @@ import MainFooter from './layout/MainFooter.vue';
 Vue.use(Router);
 
 export default new Router({
+  linkExactActiveClass: 'active',
   routes: [
     {
       path: '/',

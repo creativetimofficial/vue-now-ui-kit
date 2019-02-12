@@ -93,7 +93,7 @@ export default {
   },
   provide() {
     return {
-      close: this.close
+      closeNavbar: this.close
     };
   },
   components: {

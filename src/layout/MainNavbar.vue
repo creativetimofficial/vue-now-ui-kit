@@ -50,6 +50,22 @@
           <i class="now-ui-icons design_bullet-list-67"></i> Documentation
         </a>
       </drop-down>
+      <drop-down
+              tag="li"
+              title="Examples"
+              icon="now-ui-icons design_image"
+              class="nav-item"
+      >
+        <nav-link to="/landing">
+          <i class="now-ui-icons education_paper"></i> Landing
+        </nav-link>
+        <nav-link to="/login">
+          <i class="now-ui-icons users_circle-08"></i> Login
+        </nav-link>
+        <nav-link to="/profile">
+          <i class="now-ui-icons users_single-02"></i> Profile
+        </nav-link>
+      </drop-down>
       <li class="nav-item">
         <a
           class="nav-link btn btn-neutral"

@@ -11,7 +11,7 @@
 <script>
 export default {
   name: 'nav-link',
-  inject: ['close'],
+  inject: ['closeNavbar', 'closeDropDown'],
   props: {
     to: {
       type: [String, Object],
@@ -25,8 +25,11 @@ export default {
   },
   methods: {
     closeNav() {
-      if (this.close) {
-        this.close();
+      if (this.closeNavbar) {
+        this.closeNavbar();
+      }
+      if (this.closeDropDown) {
+        this.closeDropDown()
       }
     }
   }
