@@ -1,5 +1,10 @@
 <template>
-  <component :is="componentTag" class="badge" :class="`badge-${type}`" :href="href">
+  <component
+    :is="componentTag"
+    class="badge"
+    :class="`badge-${type}`"
+    :href="href"
+  >
     <slot></slot>
   </component>
 </template>
@@ -36,5 +41,4 @@ export default {
   }
 };
 </script>
-<style>
-</style>
+<style></style>

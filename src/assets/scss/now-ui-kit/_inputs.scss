@@ -7,6 +7,7 @@
     color: $black-color;
     line-height: normal;
     font-size: $font-size-small;
+    height: 100%;
     @include transition-input-focus-color();
     @include box-shadow(none);
 
@@ -136,6 +137,15 @@
           border: none;
           border-left: transparent !important;
       }
+    }
+
+    .input-group-append{
+        margin-left: 0;
+        .input-group-text{
+            background-color: $opacity-gray-3;
+            border: none;
+            border-right: transparent !important;
+        }
     }
 
     &.input-group-focus{

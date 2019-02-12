@@ -1,8 +1,10 @@
 <template>
-  <div id="accordion"
-       role="tablist"
-       aria-multiselectable="true"
-       class="card-collapse">
+  <div
+    id="accordion"
+    role="tablist"
+    aria-multiselectable="true"
+    class="card-collapse"
+  >
     <slot></slot>
   </div>
 </template>
@@ -76,5 +78,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

@@ -11,6 +11,7 @@ import MainFooter from './layout/MainFooter.vue';
 Vue.use(Router);
 
 const router = new Router({
+  linkExactActiveClass: 'active',
   routes: [
     {
       path: '/',

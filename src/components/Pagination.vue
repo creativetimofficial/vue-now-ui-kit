@@ -1,17 +1,25 @@
 <template>
   <ul class="pagination" :class="paginationClass">
-    <li class="page-item prev-page" :class="[{disabled: value === 1}, prevItemClasses]">
+    <li
+      class="page-item prev-page"
+      :class="[{ disabled: value === 1 }, prevItemClasses]"
+    >
       <a class="page-link" aria-label="Previous" @click="prevPage">
         <slot name="prev">»</slot>
       </a>
     </li>
-    <li class="page-item"
-        v-for="item in range(minPage, maxPage)"
-        :key="item"
-        :class="[{active: value === item}, itemClasses]">
-      <a class="page-link" @click="changePage(item)">{{item}}</a>
+    <li
+      class="page-item"
+      v-for="item in range(minPage, maxPage)"
+      :key="item"
+      :class="[{ active: value === item }, itemClasses]"
+    >
+      <a class="page-link" @click="changePage(item)">{{ item }}</a>
     </li>
-    <li class="page-item page-pre next-page" :class="[{disabled: value === totalPages}, nextItemClasses]">
+    <li
+      class="page-item page-pre next-page"
+      :class="[{ disabled: value === totalPages }, nextItemClasses]"
+    >
       <a class="page-link" aria-label="Next" @click="nextPage">
         <slot name="next">»</slot>
       </a>
