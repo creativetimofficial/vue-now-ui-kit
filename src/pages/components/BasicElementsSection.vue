@@ -77,6 +77,22 @@
             >
             </fg-input>
           </div>
+          <div class="col-sm-6 col-lg-3">
+            <fg-input
+              addon-left-icon="now-ui-icons users_single-02"
+              class="no-border"
+              placeholder="No border left icon"
+            >
+            </fg-input>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <fg-input
+              addon-right-icon="now-ui-icons users_single-02"
+              class="no-border"
+              placeholder="No border right icon"
+            >
+            </fg-input>
+          </div>
         </div>
       </div>
       <div class="space-70"></div>
