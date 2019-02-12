@@ -293,9 +293,7 @@ Tabs `v-model` will link each `label` of each tab-pane. Make sure you specify
   }
 </script>
 ```
-:::demo
-
-
+:::
 
 <script>
   module.exports = {
@@ -318,6 +316,7 @@ Tabs `v-model` will link each `label` of each tab-pane. Make sure you specify
 
 
 ### Tabs Props
+
 <props-table component-name="tabs"/>
 
 ### Tabs Slots
