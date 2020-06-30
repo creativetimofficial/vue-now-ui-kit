@@ -49,7 +49,8 @@
 /* Offset direction
  */
 html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
-  left: auto;
+  left: 100%;
+  width: 10%;
   right: 0;
 }
 /* Give origins 0 height/width so they don't interfere with clicking the
@@ -101,7 +102,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
   top: -17px;
 }
 html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
-  right: -10px;
   top: -7px;
   left: auto;
 }
