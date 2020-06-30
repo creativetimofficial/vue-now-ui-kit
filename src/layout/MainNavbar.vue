@@ -6,7 +6,7 @@
     :color-on-scroll="colorOnScroll"
     menu-classes="ml-auto"
   >
-    <template slot-scope="{ toggle, isToggled }">
+    <template>
       <router-link v-popover:popover1 class="navbar-brand" to="/">
         Now Ui Kit
       </router-link>
@@ -121,7 +121,7 @@
 </template>
 
 <script>
-import { DropDown, NavbarToggleButton, Navbar, NavLink } from '@/components';
+import { DropDown, Navbar, NavLink } from '@/components';
 import { Popover } from 'element-ui';
 export default {
   name: 'main-navbar',
@@ -132,7 +132,6 @@ export default {
   components: {
     DropDown,
     Navbar,
-    NavbarToggleButton,
     NavLink,
     [Popover.name]: Popover
   }

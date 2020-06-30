@@ -49,6 +49,8 @@ export default {
       if (this.inline) {
         return `form-check-inline`;
       }
+
+      return ``;
     }
   },
   created() {

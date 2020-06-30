@@ -141,11 +141,10 @@
   </div>
 </template>
 <script>
-import { Card, Button } from '@/components';
+import { Button } from '@/components';
 
 export default {
   components: {
-    Card,
     [Button.name]: Button
   }
 };
