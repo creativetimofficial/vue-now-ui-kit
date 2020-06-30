@@ -31,7 +31,6 @@
   </nav>
 </template>
 <script>
-import { CollapseTransition } from 'vue2-transitions';
 import NavbarToggleButton from './NavbarToggleButton';
 let resizeTimeout;
 function resizeThrottler(actualResizeHandler) {
@@ -97,7 +96,6 @@ export default {
     };
   },
   components: {
-    CollapseTransition,
     NavbarToggleButton
   },
   data() {
