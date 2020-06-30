@@ -45,6 +45,8 @@
       z-index: 50;
         &.navbar {
             position: fixed;
+            top:0;
+            width: 100%;
             .container {
                 max-width: 100%;
                 width: 100%;
