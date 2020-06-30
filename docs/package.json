@@ -8,12 +8,21 @@
     "copy:docs": "ncp .vuepress/dist ../dist/documentation",
     "build:docs": "vuepress build && npm run copy:docs"
   },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "element-ui": "^2.13.2",
+    "nouislider": "^14.6.0",
+    "vue-lazyload": "^1.3.3",
+    "vue2-transitions": "^0.3.0"
+  },
   "devDependencies": {
+    "@vuepress/plugin-search": "^1.0.0-alpha.0",
     "cheerio": "^1.0.0-rc.2",
     "markdown-it-container": "^2.0.0",
     "ncp": "^2.0.0",
-    "vuepress": "^0.13.1",
-    "webpack": "^4.6.0"
+    "vuepress": "^1.0.0-alpha.37",
+    "webpack": "^4.6.0",
+    "sass-loader": "^8.0.2"
   },
   "author": "critijora <joracristi@gmail.com>",
   "description": "Vue Now UI Kit PRO"

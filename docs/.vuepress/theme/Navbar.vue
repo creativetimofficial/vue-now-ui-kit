@@ -27,8 +27,8 @@
     </navbar>
 </template>
 <script>
-  import SearchBox from '../../node_modules/vuepress/lib/default-theme/SearchBox.vue';
-  import SidebarButton from '../../node_modules/vuepress/lib/default-theme/SidebarButton.vue';
+  import SearchBox from '@SearchBox'
+  import SidebarButton from '../../node_modules/@vuepress/theme-default/components/SidebarButton.vue';
 
   export default {
     components: {
