@@ -5,7 +5,7 @@
       :class="[{ disabled: value === 1 }, prevItemClasses]"
     >
       <a class="page-link" aria-label="Previous" @click="prevPage">
-        <slot name="prev">»</slot>
+        <slot name="prev">«</slot>
       </a>
     </li>
     <li
