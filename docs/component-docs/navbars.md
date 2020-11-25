@@ -7,9 +7,9 @@ Here’s what you need to know before getting started with the navbar:
 <ul>
   <li>Navbars require a wrapping <code class="highlighter-rouge">.navbar</code> with <code class="highlighter-rouge">.navbar-expand{-sm|-md|-lg|-xl}</code> for responsive collapsing and <a href="#color-schemes">color scheme</a> classes.</li>
   <li>Navbars and their contents are fluid by default. Use <a href="#containers">optional containers</a> to limit their horizontal width.</li>
-  <li>Use our <a href="/docs/1.0/utilities/spacing/">spacing</a> and <a href="/docs/1.0/utilities/flex/">flex</a> utility classes for controlling spacing and alignment within navbars.</li>
+  <li>Use our spacing and flex utility classes for controlling spacing and alignment within navbars.</li>
   <li>Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.</li>
-  <li>Navbars are hidden by default when printing. Force them to be printed by adding <code class="highlighter-rouge">.d-print</code> to the <code class="highlighter-rouge">.navbar</code>. See the <a href="/docs/1.0/utilities/display/">display</a> utility class.</li>
+  <li>Navbars are hidden by default when printing. Force them to be printed by adding <code class="highlighter-rouge">.d-print</code> to the <code class="highlighter-rouge">.navbar</code>. See the display utility class.</li>
   <li>Ensure accessibility by using a <code class="highlighter-rouge">&lt;nav&gt;</code> element or, if using a more generic element such as a <code class="highlighter-rouge">&lt;div&gt;</code>, add a <code class="highlighter-rouge">role="navigation"</code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</li>
   <li>You need a `sidebar-collapse` class on document body in order to make the navbars work properly on mobile</li>
 </ul>
@@ -149,7 +149,7 @@ Dropdown menus require a wrapping element for positioning, so be sure to use sep
         <a class="nav-link" href="#">Pricing</a>
       </li>
       <drop-down tag="li" class="nav-item" title="Dropdown Link">
-       
+
        <a class="dropdown-item" href="#">Action</a>
        <a class="dropdown-item" href="#">Another action</a>
        <a class="dropdown-item" href="#">Something else here</a>
@@ -196,7 +196,7 @@ Place various form controls and components within a navbar with .form-inline.
 
 ### How to enable Burger Menu
 
-We created for you a class named `.burger-menu` and once it is applied to the tag body it will transform 
+We created for you a class named `.burger-menu` and once it is applied to the tag body it will transform
 the navbar like it appears on the responsive mode and when you will open it will come from the right side or left side.
 To make open from left side please add the class `.menu-on-left` also on the body tag.
 
@@ -261,12 +261,12 @@ To make open from left side please add the class `.menu-on-left` also on the bod
 ### Placement
 
 Use our position utilities to place navbars in non-static positions.
-Choose from fixed to the top, fixed to the bottom, or stickied to the top 
-(scrolls with the page until it reaches the top, then stays there). 
-Fixed navbars use `position: fixed`, meaning they’re pulled from the normal flow of 
+Choose from fixed to the top, fixed to the bottom, or stickied to the top
+(scrolls with the page until it reaches the top, then stays there).
+Fixed navbars use `position: fixed`, meaning they’re pulled from the normal flow of
 the DOM and may require custom CSS (e.g., `padding-top` on the `<body>`) to prevent overlap with other elements.
 
-Also note that `.sticky-top` uses `position: sticky`, which 
+Also note that `.sticky-top` uses `position: sticky`, which
 [isn’t fully supported in every browser.](https://caniuse.com/#feat=css-sticky)
 
 
@@ -335,15 +335,15 @@ Also note that `.sticky-top` uses `position: sticky`, which
 
 ### Responsive behaviors
 
-Navbars can utilize `.navbar-toggler`, `.navbar-collapse`, and 
-`.navbar-expand{-sm|-md|-lg|-xl}` classes to change when their content collapses behind a button. 
+Navbars can utilize `.navbar-toggler`, `.navbar-collapse`, and
+`.navbar-expand{-sm|-md|-lg|-xl}` classes to change when their content collapses behind a button.
 In combination with other utilities, you can easily choose when to show or hide particular elements.
 These classes can be also added with the help of `expand` prop.
 E.g `expand="md"`
 
-For navbars that never collapse, add the `.navbar-expand` class on the navbar. 
+For navbars that never collapse, add the `.navbar-expand` class on the navbar.
 For navbars that always collapse, don’t add any `.navbar-expand` class.
-Note that we already integrated a toggler button inside our `Navbar` component so you don't have to worry 
+Note that we already integrated a toggler button inside our `Navbar` component so you don't have to worry
 about adding it. It will simply appear on small screens.
 
 ### Navbar Props
