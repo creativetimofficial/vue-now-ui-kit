@@ -102,7 +102,7 @@ Classic, restyled modal
               <div class="col-md-8">
                 <strong>1. Register</strong>
                 <p class="description">The first step is to create an account at <a
-                  href="http://www.creative-tim.com/">Creative Tim</a>. You can choose a social network or
+                  href="https://www.creative-tim.com/">Creative Tim</a>. You can choose a social network or
                   go for the classic version, whatever works best for you.</p>
               </div>
               <div class="col-md-4">
@@ -117,7 +117,7 @@ Classic, restyled modal
               <div class="col-md-8">
                 <strong>2. Apply</strong>
                 <p class="description">The first step is to create an account at <a
-                  href="http://www.creative-tim.com/">Creative Tim</a>. You can choose a social network or
+                  href="https://www.creative-tim.com/">Creative Tim</a>. You can choose a social network or
                   go for the classic version, whatever works best for you.</p>
               </div>
               <div class="col-md-4">
@@ -195,8 +195,8 @@ Best way to notify a user in a nice way.
 
 ### Optional sizes
 
-Modals have two optional sizes, available via modifier classes to be placed on a 
-`.modal-dialog`. 
+Modals have two optional sizes, available via modifier classes to be placed on a
+`.modal-dialog`.
 These sizes kick in at certain breakpoints to avoid horizontal scrollbars on narrower viewports.
 
 :::demo
