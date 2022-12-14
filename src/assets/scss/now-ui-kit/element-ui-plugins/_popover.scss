@@ -22,8 +22,8 @@
   }
 }
 
-@include arrow-color('primary', $primary-color)
-@include arrow-color('info', $info-color)
-@include arrow-color('warning', $warning-color)
-@include arrow-color('success', $success-color)
-@include arrow-color('danger', $danger-color)
+@include arrow-color('primary', $primary-color);
+@include arrow-color('info', $info-color);
+@include arrow-color('warning', $warning-color);
+@include arrow-color('success', $success-color);
+@include arrow-color('danger', $danger-color);
