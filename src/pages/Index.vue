@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="page-header clear-filter" filter-color="orange">
+    <div class="page-header clear-filter">
       <parallax
         class="page-header-image"
         style="background-image:url('img/header.jpg')"
@@ -8,43 +8,45 @@
       </parallax>
       <div class="container">
         <div class="content-center brand">
-          <img class="n-logo" src="img/now-logo.png" alt="" />
-          <h1 class="h1-seo">Now UI Kit.</h1>
-          <h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3>
-        </div>
-        <h6 class="category category-absolute">
-          Designed by
-          <a href="http://invisionapp.com/" target="_blank">
-            <img src="img/invision-white-slim.png" class="invision-logo" /> </a
-          >. Coded by
-          <a href="https://www.creative-tim.com" target="_blank">
-            <img
-              src="img/creative-tim-white-slim2.png"
-              class="creative-tim-logo"
-            /> </a
-          >.
-        </h6>
-      </div>
-    </div>
-    <div class="main">
-      <div class="section section-images">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="hero-images-container">
-                <img src="img/hero-image-1.png" alt="" />
-              </div>
-              <div class="hero-images-container-1">
-                <img src="img/hero-image-2.png" alt="" />
-              </div>
-              <div class="hero-images-container-2">
-                <img src="img/hero-image-3.png" alt="" />
-              </div>
+
+          <b-card round>
+            <div class="search-type">
+              <span class="search-type-tab active">
+                <img src="/img/icon-Flight.svg" alt="Flight" width="25" height="18">
+                Flight
+              </span>
+              <span class="search-type-tab">
+                <img src="/img/icon-Hotel.svg" alt="Hotel" width="25" height="18">
+                Hotel
+              </span>
+              <span class="search-type-tab">
+                <img src="/img/icon-Tour.svg" alt="Tour" width="25" height="18">
+                Tour
+              </span>
             </div>
-          </div>
+
+            <div id="btn_flight_radio" class="text-left">
+              <b-form-radio-group
+                  id="radio-slots"
+                  v-model="selected"
+                  :options="options"
+                  name="radio-options-slots"
+              >
+              </b-form-radio-group>
+            </div>
+
+          </b-card>
+
         </div>
       </div>
     </div>
+
+    <div class="section section-basic" style="margin-top: 4rem;">
+      <div class="container">
+        <b-img style="border-radius: 15px !important;" src="https://ik.imagekit.io/w13m3d3rhif/web/campaign/season-of-travel/season-of-travel-lg.png?tr=f-auto,h-280,pr-true" fluid alt="Responsive image"></b-img>
+      </div>
+    </div>
+
     <basic-elements></basic-elements>
     <navigation></navigation>
     <tabs-section></tabs-section>
@@ -106,7 +108,59 @@ export default {
     SignupForm,
     ExamplesSection,
     DownloadSection
+  },
+  data: () => {
+    return {
+      selected: '',
+      options: [
+        { text: 'One Way', value: 'one_way' },
+        { text: 'Round Way', value: 'round_way' }
+      ]
+    }
   }
 };
 </script>
-<style></style>
+<style scoped>
+  .search-type{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 4px 10px rgb(0 117 255 / 9%);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    justify-content: space-evenly;
+    padding: 0 60px;
+    width: auto;
+    transform: translate(-50%,calc(-50% - 5px));
+  }
+  .search-type span.search-type-tab {
+    min-width: 120px;
+    padding: 20px;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.88rem;
+    line-height: 26px;
+    font-weight: 600;
+    color: #1c3c6b;
+  }
+  .search-type span.search-type-tab.active {
+    border-bottom: 2px solid #fccd03;
+  }
+  .search-type span.search-type-tab img {
+    filter: none;
+    max-width: 24px;
+    max-height: 18px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  .card-body {
+    min-height: 200px;
+    padding: 3rem;
+  }
+  #btn_flight_radio span {
+    color: #1c3c6b;
+    opacity: 1;
+  }
+</style>

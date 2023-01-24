@@ -19,12 +19,14 @@ import App from './App.vue';
 // You can change this import to `import router from './starterRouter'` to quickly start development from a blank layout.
 import router from './router';
 import NowUiKit from './plugins/now-ui-kit';
+import Global_Mixins from './mixins/global';
 
 Vue.config.productionTip = false;
 
 Vue.use(NowUiKit);
 
 new Vue({
+  mixins: [Global_Mixins],
   router,
   render: h => h(App)
 }).$mount('#app');

@@ -19,7 +19,6 @@
 }
 
 .page-header{
-  min-height: 100vh;
   max-height: 999px;
   padding: 0;
   color: $white-color;
@@ -68,7 +67,7 @@
       color: #FFFFFF;
       padding: 0 15px;
       width: 100%;
-      max-width: 880px;
+      max-width: 95%;
 
     }
 
@@ -116,7 +115,7 @@
 .section-story-overview{
     padding: 50px 0;
 
-    .image-container{
+    .image-container {
         height: 335px;
         position: relative;
         background-position: center center;

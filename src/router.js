@@ -11,13 +11,14 @@ Vue.use(Router);
 
 export default new Router({
   linkExactActiveClass: 'active',
+  mode: 'history',
   routes: [
     {
       path: '/',
       name: 'index',
       components: { default: Index, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 400 },
+        header: { colorOnScroll: 90 },
         footer: { backgroundColor: 'black' }
       }
     },
@@ -26,7 +27,7 @@ export default new Router({
       name: 'landing',
       components: { default: Landing, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 400 },
+        header: { colorOnScroll: 90 },
         footer: { backgroundColor: 'black' }
       }
     },
@@ -35,7 +36,7 @@ export default new Router({
       name: 'login',
       components: { default: Login, header: MainNavbar },
       props: {
-        header: { colorOnScroll: 400 }
+        header: { colorOnScroll: 90 }
       }
     },
     {
@@ -43,7 +44,7 @@ export default new Router({
       name: 'profile',
       components: { default: Profile, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 400 },
+        header: { colorOnScroll: 90 },
         footer: { backgroundColor: 'black' }
       }
     }
