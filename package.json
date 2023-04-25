@@ -3,31 +3,34 @@
   "version": "1.2.0",
   "private": true,
   "scripts": {
-    "serve": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "prettify": "prettier --write ."
   },
   "dependencies": {
-    "babel-eslint": "^10.1.0",
-    "bootstrap": "^4.5.0",
-    "core-js": "^3.26.1",
-    "element-ui": "^2.15.12",
-    "eslint": "^7.3.1",
-    "eslint-plugin-vue": "^6.2.2",
-    "nouislider": "^15.6.1",
-    "vue": "^2.7.14",
-    "vue-lazy-load": "^0.0.7",
-    "vue-lazyload": "^1.3.4",
-    "vue-router": "^3.3.4",
-    "vue2-transitions": "^0.3.0"
+    "bootstrap": "4.6.2",
+    "core-js": "3.30.1",
+    "element-ui": "2.15.13",
+    "nouislider": "15.7.0",
+    "vue": "2.7.14",
+    "vue-lazyload": "1.3.4",
+    "vue-router": "3.6.5",
+    "vue2-transitions": "0.3.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "4.5.19",
-    "@vue/cli-plugin-eslint": "4.5.19",
-    "@vue/cli-service": "4.5.19",
-    "babel-plugin-component": "^1.1.1",
-    "sass": "^1.56.2",
-    "sass-loader": "10.2.0",
+    "@vue/cli-plugin-babel": "5.0.8",
+    "@vue/cli-plugin-eslint": "5.0.8",
+    "@vue/cli-service": "5.0.8",
+    "@vue/eslint-config-prettier": "7.1.0",
+    "babel-plugin-component": "1.1.1",
+    "@babel/eslint-parser": "7.21.3",
+    "eslint": "8.39.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-vue": "9.11.0",
+    "prettier": "2.8.8",
+    "sass": "^1.62.0",
+    "sass-loader": "13.2.2",
     "vue-template-compiler": "^2.7.14"
   }
 }
