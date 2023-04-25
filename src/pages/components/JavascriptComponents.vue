@@ -66,18 +66,10 @@
             </div>
           </el-popover>
 
-          <n-button v-popover:popover1 type="default">
-            On left
-          </n-button>
-          <n-button v-popover:popover2 type="default">
-            On top
-          </n-button>
-          <n-button v-popover:popover3 type="default">
-            On right
-          </n-button>
-          <n-button v-popover:popover4 type="default">
-            On bottom
-          </n-button>
+          <n-button v-popover:popover1 type="default"> On left </n-button>
+          <n-button v-popover:popover2 type="default"> On top </n-button>
+          <n-button v-popover:popover3 type="default"> On right </n-button>
+          <n-button v-popover:popover4 type="default"> On bottom </n-button>
         </div>
         <br />
         <br />
@@ -172,8 +164,8 @@
   </div>
 </template>
 <script>
-import { Button, Modal, FormGroupInput } from '@/components';
-import { Popover, Tooltip, DatePicker } from 'element-ui';
+import { Button, Modal, FormGroupInput } from "@/components";
+import { Popover, Tooltip, DatePicker } from "element-ui";
 
 export default {
   components: {
@@ -182,19 +174,19 @@ export default {
     [Popover.name]: Popover,
     [Tooltip.name]: Tooltip,
     [DatePicker.name]: DatePicker,
-    [FormGroupInput.name]: FormGroupInput
+    [FormGroupInput.name]: FormGroupInput,
   },
   data() {
     return {
       modals: {
         classic: false,
-        mini: false
+        mini: false,
       },
       pickers: {
-        datePicker: ''
-      }
+        datePicker: "",
+      },
     };
-  }
+  },
 };
 </script>
 <style lang="scss">

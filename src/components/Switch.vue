@@ -4,7 +4,7 @@
     :class="switchClass"
   >
     <div class="bootstrap-switch-container" @click="triggerToggle()">
-      <span class="bootstrap-switch-handle-on ">
+      <span class="bootstrap-switch-handle-on">
         <slot name="on">
           {{ onText }}
         </slot>
@@ -20,16 +20,16 @@
 </template>
 <script>
 export default {
-  name: 'n-switch',
+  name: "n-switch",
   props: {
     value: [Array, Boolean],
     onText: String,
-    offText: String
+    offText: String,
   },
   computed: {
     switchClass() {
-      let base = 'bootstrap-switch-';
-      let state = this.model ? 'on' : 'off';
+      let base = "bootstrap-switch-";
+      let state = this.model ? "on" : "off";
       let classes = base + state;
       return classes;
     },
@@ -38,14 +38,14 @@ export default {
         return this.value;
       },
       set(value) {
-        this.$emit('input', value);
-      }
-    }
+        this.$emit("input", value);
+      },
+    },
   },
   methods: {
     triggerToggle() {
       this.model = !this.model;
-    }
-  }
+    },
+  },
 };
 </script>

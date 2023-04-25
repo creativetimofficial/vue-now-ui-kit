@@ -36,11 +36,11 @@
   </div>
 </template>
 <script>
-import { Alert } from '@/components';
+import { Alert } from "@/components";
 export default {
   components: {
-    Alert
-  }
+    Alert,
+  },
 };
 </script>
 <style></style>

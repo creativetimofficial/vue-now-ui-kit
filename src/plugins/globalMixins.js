@@ -16,9 +16,9 @@ const GlobalMixins = {
         if (bodyClass) {
           document.body.classList.remove(bodyClass);
         }
-      }
+      },
     });
-  }
+  },
 };
 
 export default GlobalMixins;

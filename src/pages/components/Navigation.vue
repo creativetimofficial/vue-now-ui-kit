@@ -92,7 +92,7 @@
     <div id="navbar">
       <div
         class="navigation-example"
-        style="background-image:url('img/bg7.jpg')"
+        style="background-image: url('img/bg7.jpg')"
       >
         <!-- Navbar Primary  -->
         <navbar type="primary" menu-classes="ml-auto">
@@ -336,13 +336,13 @@
   </div>
 </template>
 <script>
-import { Navbar, DropDown } from '@/components';
+import { Navbar, DropDown } from "@/components";
 
 export default {
   components: {
     Navbar,
-    DropDown
-  }
+    DropDown,
+  },
 };
 </script>
 <style></style>

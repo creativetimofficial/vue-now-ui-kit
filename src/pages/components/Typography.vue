@@ -44,9 +44,7 @@
                   the level that things could be at."
                   <br />
                   <br />
-                  <small>
-                    - Noaa
-                  </small>
+                  <small> - Noaa </small>
                 </p>
               </blockquote>
             </div>
@@ -141,12 +139,12 @@
   </div>
 </template>
 <script>
-import { Button } from '@/components';
+import { Button } from "@/components";
 
 export default {
   components: {
-    [Button.name]: Button
-  }
+    [Button.name]: Button,
+  },
 };
 </script>
 <style>

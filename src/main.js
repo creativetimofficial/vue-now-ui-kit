@@ -5,7 +5,7 @@
  =========================================================
 
  * Product Page: https://www.creative-tim.com/product/now-ui-kit
- * Copyright 2022 Creative Tim (http://www.creative-tim.com)
+ * Copyright 2023 Creative Tim (http://www.creative-tim.com)
 
  * Designed by www.invisionapp.com Coded by www.creative-tim.com
 
