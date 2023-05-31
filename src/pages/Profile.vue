@@ -3,7 +3,7 @@
     <div class="page-header clear-filter" filter-color="orange">
       <parallax
         class="page-header-image"
-        style="background-image:url('img/bg5.jpg')"
+        style="background-image: url('img/bg5.jpg')"
       >
       </parallax>
       <div class="container">
@@ -124,15 +124,15 @@
   </div>
 </template>
 <script>
-import { Tabs, TabPane } from '@/components';
+import { Tabs, TabPane } from "@/components";
 
 export default {
-  name: 'profile',
-  bodyClass: 'profile-page',
+  name: "profile",
+  bodyClass: "profile-page",
   components: {
     Tabs,
-    TabPane
-  }
+    TabPane,
+  },
 };
 </script>
 <style></style>

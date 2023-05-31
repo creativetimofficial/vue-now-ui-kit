@@ -11,20 +11,20 @@
 
 <script>
 export default {
-  name: 'collapse',
+  name: "collapse",
   props: {
     animationDuration: {
       type: Number,
-      default: 250
+      default: 250,
     },
     multipleActive: {
       type: Boolean,
-      default: true
+      default: true,
     },
     activeIndex: {
       type: Number,
-      default: -1
-    }
+      default: -1,
+    },
   },
   provide() {
     return {
@@ -32,12 +32,12 @@ export default {
       multipleActive: this.multipleActive,
       addItem: this.addItem,
       removeItem: this.removeItem,
-      deactivateAll: this.deactivateAll
+      deactivateAll: this.deactivateAll,
     };
   },
   data() {
     return {
-      items: []
+      items: [],
     };
   },
   methods: {
@@ -55,7 +55,7 @@ export default {
       }
     },
     deactivateAll() {
-      this.items.forEach(item => {
+      this.items.forEach((item) => {
         item.active = false;
       });
     },
@@ -63,7 +63,7 @@ export default {
       if (this.activeIndex !== -1) {
         this.items[this.activeIndex].active = true;
       }
-    }
+    },
   },
   mounted() {
     this.$nextTick(() => {
@@ -73,8 +73,8 @@ export default {
   watch: {
     activeIndex() {
       this.activateItem();
-    }
-  }
+    },
+  },
 };
 </script>
 

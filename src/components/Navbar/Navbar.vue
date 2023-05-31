@@ -15,7 +15,7 @@
         :class="[
           { show: showMenu },
           { 'has-image': menuImage },
-          navMenuClasses
+          navMenuClasses,
         ]"
         v-if="$slots['navbar-menu'] || $scopedSlots['navbar-menu']"
         data-color="orange"
@@ -31,7 +31,7 @@
   </nav>
 </template>
 <script>
-import NavbarToggleButton from './NavbarToggleButton';
+import NavbarToggleButton from "./NavbarToggleButton";
 let resizeTimeout;
 function resizeThrottler(actualResizeHandler) {
   // ignore resize events as long as an actualResizeHandler execution is in the queue
@@ -46,63 +46,63 @@ function resizeThrottler(actualResizeHandler) {
 }
 
 export default {
-  name: 'navbar',
+  name: "navbar",
   props: {
     transparent: {
       type: Boolean,
-      default: false
+      default: false,
     },
     position: {
       type: String,
-      default: 'relative'
+      default: "relative",
     },
     menuClasses: {
-      type: [String, Object, Array]
+      type: [String, Object, Array],
     },
     colorOnScroll: {
       type: Number,
-      default: 0
+      default: 0,
     },
     type: {
       type: String,
-      default: 'white',
+      default: "white",
       validator(value) {
         return [
-          'white',
-          'default',
-          'primary',
-          'danger',
-          'success',
-          'warning',
-          'info'
+          "white",
+          "default",
+          "primary",
+          "danger",
+          "success",
+          "warning",
+          "info",
         ].includes(value);
-      }
+      },
     },
     navMenuClasses: {
       type: String,
-      default: ''
+      default: "",
     },
     menuImage: {
-      type: String
+      type: String,
     },
     expand: {
       type: [String, Boolean],
-      default: 'lg'
-    }
+      default: "lg",
+    },
   },
   provide() {
     return {
-      closeNavbar: this.close
+      closeNavbar: this.close,
     };
   },
   components: {
-    NavbarToggleButton
+    NavbarToggleButton,
   },
   data() {
     return {
       showMenu: false,
-      extraNavClasses: '',
-      currentScrollValue: 0
+      extraNavClasses: "",
+      currentScrollValue: 0,
     };
   },
   computed: {
@@ -111,7 +111,7 @@ export default {
         toggle: this.toggle,
         open: this.open,
         close: this.close,
-        isToggled: this.showMenu
+        isToggled: this.showMenu,
       };
     },
     classes() {
@@ -120,29 +120,29 @@ export default {
       let colorOnScrollTransparent =
         this.colorOnScroll && this.currentScrollValue < this.colorOnScroll;
 
-      if (this.position === 'fixed') {
-        navPosition = 'fixed-top';
+      if (this.position === "fixed") {
+        navPosition = "fixed-top";
       }
 
       return [
-        { 'navbar-transparent': this.transparent || colorOnScrollTransparent },
+        { "navbar-transparent": this.transparent || colorOnScrollTransparent },
         { [color]: !this.transparent && this.colorOnScroll === 0 },
-        this.expand ? `navbar-expand-${this.expand}` : '',
+        this.expand ? `navbar-expand-${this.expand}` : "",
         navPosition,
-        this.extraNavClasses
+        this.extraNavClasses,
       ];
-    }
+    },
   },
   methods: {
     setNav(value) {
-      let htmlClasses = document.querySelector('html').classList;
+      let htmlClasses = document.querySelector("html").classList;
       if (value) {
-        htmlClasses.add('nav-open');
+        htmlClasses.add("nav-open");
       } else {
-        htmlClasses.remove('nav-open');
+        htmlClasses.remove("nav-open");
       }
-      let isOpen = htmlClasses.contains('nav-open');
-      let eventToTrigger = isOpen ? 'open' : 'close';
+      let isOpen = htmlClasses.contains("nav-open");
+      let eventToTrigger = isOpen ? "open" : "close";
       this.showMenu = isOpen;
       this.$emit(eventToTrigger);
     },
@@ -165,20 +165,20 @@ export default {
         this.extraNavClasses = `bg-${this.type}`;
       } else {
         if (this.extraNavClasses) {
-          this.extraNavClasses = '';
+          this.extraNavClasses = "";
         }
       }
     },
     scrollListener() {
       resizeThrottler(this.handleScroll);
-    }
+    },
   },
   mounted() {
-    document.addEventListener('scroll', this.scrollListener);
+    document.addEventListener("scroll", this.scrollListener);
   },
   beforeDestroy() {
-    document.removeEventListener('scroll', this.scrollListener);
-  }
+    document.removeEventListener("scroll", this.scrollListener);
+  },
 };
 </script>
 <style></style>

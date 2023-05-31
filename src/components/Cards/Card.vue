@@ -4,7 +4,7 @@
     :class="[
       { 'card-plain': plain },
       { 'card-raised': raised },
-      { [`card-${type}`]: type }
+      { [`card-${type}`]: type },
     ]"
     :data-background-color="color"
   >
@@ -48,7 +48,7 @@
 </template>
 <script>
 export default {
-  name: 'card',
+  name: "card",
   props: {
     type: String,
     title: String,
@@ -60,8 +60,8 @@ export default {
     plain: Boolean,
     raised: Boolean,
     cardBodyClasses: [String, Object, Array],
-    headerClasses: [String, Object, Array]
-  }
+    headerClasses: [String, Object, Array],
+  },
 };
 </script>
 <style></style>

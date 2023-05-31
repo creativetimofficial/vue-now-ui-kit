@@ -1,4 +1,4 @@
-import { Parallax } from '../components';
+import { Parallax } from "../components";
 /**
  * You can register global components here
  */
@@ -6,7 +6,7 @@ import { Parallax } from '../components';
 const globalComponents = {
   install(Vue) {
     Vue.component(Parallax.name, Parallax);
-  }
+  },
 };
 
 export default globalComponents;

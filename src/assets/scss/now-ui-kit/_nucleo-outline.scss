@@ -7,12 +7,12 @@ Created using IcoMoon - icomoon.io
 -------------------------------- */
 
 @font-face {
-  font-family: 'Nucleo Outline';
-  src: url('../fonts/nucleo-outline.eot');
-  src: url('../fonts/nucleo-outline.eot') format('embedded-opentype'),
-  url('../fonts/nucleo-outline.woff2') format('woff2'),
-  url('../fonts/nucleo-outline.woff') format('woff'),
-  url('../fonts/nucleo-outline.ttf') format('truetype');
+  font-family: "Nucleo Outline";
+  src: url("../fonts/nucleo-outline.eot");
+  src: url("../fonts/nucleo-outline.eot") format("embedded-opentype"),
+    url("../fonts/nucleo-outline.woff2") format("woff2"),
+    url("../fonts/nucleo-outline.woff") format("woff"),
+    url("../fonts/nucleo-outline.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -23,7 +23,7 @@ Created using IcoMoon - icomoon.io
 
 .now-ui-icons {
   display: inline-block;
-  font: normal normal normal 14px/1 'Nucleo Outline';
+  font: normal normal normal 14px/1 "Nucleo Outline";
   font-size: inherit;
   speak: none;
   text-transform: none;
@@ -132,8 +132,8 @@ Created using IcoMoon - icomoon.io
 	font icons
 -------------------------*/
 
-.now-ui-icons.ui-1_check:before{
-    content: "\ea22";
+.now-ui-icons.ui-1_check:before {
+  content: "\ea22";
 }
 
 .now-ui-icons.ui-1_email-85:before {
@@ -533,24 +533,24 @@ Created using IcoMoon - icomoon.io
 }
 
 .all-icons .font-icon-detail {
-    text-align: center;
-    padding: 45px 0px 30px;
-    border: 1px solid #e5e5e5;
-    border-radius: 0.1875rem;
-    margin: 15px 0;
-    min-height: 168px;
+  text-align: center;
+  padding: 45px 0px 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.1875rem;
+  margin: 15px 0;
+  min-height: 168px;
 }
 
 .all-icons [class*="now-ui-icons"] {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .all-icons .font-icon-detail p {
-    margin: 25px auto 0;
-    width: 100%;
-    text-align: center;
-    display: block;
-    color: #B8B8B8;
-    padding:0 10px;
-    font-size: 0.7142em;
+  margin: 25px auto 0;
+  width: 100%;
+  text-align: center;
+  display: block;
+  color: #b8b8b8;
+  padding: 0 10px;
+  font-size: 0.7142em;
 }

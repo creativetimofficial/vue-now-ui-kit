@@ -5,7 +5,7 @@
     :class="[
       { show: isOpen },
       { dropdown: direction === 'down' },
-      { dropup: direction === 'up' }
+      { dropup: direction === 'up' },
     ]"
     aria-haspopup="true"
     :aria-expanded="isOpen"
@@ -26,7 +26,7 @@
       class="dropdown-menu"
       :class="[
         { 'dropdown-menu-right': position === 'right' },
-        { show: isOpen }
+        { show: isOpen },
       ]"
     >
       <slot></slot>
@@ -35,11 +35,11 @@
 </template>
 <script>
 export default {
-  name: 'drop-down',
+  name: "drop-down",
   props: {
     direction: {
       type: String,
-      default: 'down'
+      default: "down",
     },
     title: String,
     icon: String,
@@ -47,29 +47,29 @@ export default {
     hideArrow: Boolean,
     tag: {
       type: String,
-      default: 'li'
-    }
+      default: "li",
+    },
   },
   data() {
     return {
-      isOpen: false
+      isOpen: false,
     };
   },
   provide() {
     return {
-      closeDropDown: this.closeDropDown
-    }
+      closeDropDown: this.closeDropDown,
+    };
   },
   methods: {
     toggleDropDown() {
       this.isOpen = !this.isOpen;
-      this.$emit('change', this.isOpen);
+      this.$emit("change", this.isOpen);
     },
     closeDropDown() {
       this.isOpen = false;
-      this.$emit('change', this.isOpen);
-    }
-  }
+      this.$emit("change", this.isOpen);
+    },
+  },
 };
 </script>
 <style>

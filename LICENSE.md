@@ -1,4 +1,3 @@
-
 MIT License
 
 Copyright (c) 2017-2019 Cristi Jora and Creative Tim (www.creative-tim.com)

@@ -54,7 +54,7 @@
   </div>
 </template>
 <script>
-import { Progress, Pagination, Badge, Tabs, TabPane } from '@/components';
+import { Progress, Pagination, Badge, Tabs, TabPane } from "@/components";
 
 export default {
   components: {
@@ -62,17 +62,17 @@ export default {
     [Pagination.name]: Pagination,
     Badge,
     Tabs,
-    TabPane
+    TabPane,
   },
   data() {
     return {
       pagination: {
         simple: 1,
         default: 2,
-        full: 3
-      }
+        full: 3,
+      },
     };
-  }
+  },
 };
 </script>
 <style></style>

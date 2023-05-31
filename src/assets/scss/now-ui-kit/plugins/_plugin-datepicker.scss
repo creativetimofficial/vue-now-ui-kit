@@ -11,7 +11,8 @@
   border-radius: 4px;
   direction: ltr;
   @include transform-translate-y(-40px);
-  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, opacity 0.3s ease 0s, height 0s linear 0.35s;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,
+    opacity 0.3s ease 0s, height 0s linear 0.35s;
 
   @include opacity(0);
   visibility: hidden;
@@ -19,12 +20,12 @@
   width: 254px;
   max-width: 254px;
 
-  &.dropdown-menu:before{
-      display: none;
+  &.dropdown-menu:before {
+    display: none;
   }
 
-  &.datepicker-primary{
-      @include datepicker-colors($primary-color);
+  &.datepicker-primary {
+    @include datepicker-colors($primary-color);
   }
 }
 .datepicker-inline {
@@ -44,7 +45,7 @@
   left: 0;
 }
 .datepicker-dropdown:before {
-  content: '';
+  content: "";
   display: inline-block;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
@@ -54,7 +55,7 @@
   position: absolute;
 }
 .datepicker-dropdown:after {
-  content: '';
+  content: "";
   display: inline-block;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
@@ -114,13 +115,13 @@
   font-weight: $font-weight-light;
   font-size: $font-size-base;
   border: none;
-   z-index: 1;
+  z-index: 1;
   position: relative;
   cursor: pointer;
 }
 
-.datepicker th{
-    color: $primary-color;
+.datepicker th {
+  color: $primary-color;
 }
 
 .table-condensed > tbody > tr > td,
@@ -128,10 +129,10 @@
 .table-condensed > tfoot > tr > td,
 .table-condensed > tfoot > tr > th,
 .table-condensed > thead > tr > td,
-.table-condensed > thead > tr > th{
-    padding: 2px;
-    text-align: center;
-    cursor: pointer;
+.table-condensed > thead > tr > th {
+  padding: 2px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .table-striped .datepicker table tr td,
@@ -150,7 +151,7 @@
 .datepicker table tr td.disabled,
 .datepicker table tr td.disabled:hover {
   background: none;
-  color: $default-color ;
+  color: $default-color;
   cursor: default;
 }
 .datepicker table tr td.highlighted {
@@ -164,7 +165,13 @@
   background-color: #fde19a;
   background-image: -moz-linear-gradient(to bottom, #fdd49a, #fdf59a);
   background-image: -ms-linear-gradient(to bottom, #fdd49a, #fdf59a);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fdd49a), to(#fdf59a));
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(#fdd49a),
+    to(#fdf59a)
+  );
   background-image: -webkit-linear-gradient(to bottom, #fdd49a, #fdf59a);
   background-image: -o-linear-gradient(to bottom, #fdd49a, #fdf59a);
   background-image: linear-gradient(to bottom, #fdd49a, #fdf59a);
@@ -229,7 +236,13 @@
   background-color: #f3d17a;
   background-image: -moz-linear-gradient(to bottom, #f3c17a, #f3e97a);
   background-image: -ms-linear-gradient(to bottom, #f3c17a, #f3e97a);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f3c17a), to(#f3e97a));
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(#f3c17a),
+    to(#f3e97a)
+  );
   background-image: -webkit-linear-gradient(to bottom, #f3c17a, #f3e97a);
   background-image: -o-linear-gradient(to bottom, #f3c17a, #f3e97a);
   background-image: linear-gradient(to bottom, #f3c17a, #f3e97a);
@@ -281,7 +294,13 @@
   background-color: #9e9e9e;
   background-image: -moz-linear-gradient(to bottom, #b3b3b3, #808080);
   background-image: -ms-linear-gradient(to bottom, #b3b3b3, #808080);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b3b3b3), to(#808080));
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(#b3b3b3),
+    to(#808080)
+  );
   background-image: -webkit-linear-gradient(to bottom, #b3b3b3, #808080);
   background-image: -o-linear-gradient(to bottom, #b3b3b3, #808080);
   background-image: linear-gradient(to bottom, #b3b3b3, #808080);
@@ -329,7 +348,6 @@
 .datepicker table tr td.active:hover div,
 .datepicker table tr td.active.disabled div,
 .datepicker table tr td.active.disabled:hover div {
-
   background-color: $primary-color;
   color: $white-color;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
@@ -353,7 +371,7 @@
 .datepicker table tr td.active[disabled] div,
 .datepicker table tr td.active:hover[disabled] div,
 .datepicker table tr td.active.disabled[disabled] div,
-.datepicker table tr td.active.disabled:hover[disabled] div{
+.datepicker table tr td.active.disabled:hover[disabled] div {
   background-color: $primary-color;
 }
 .datepicker table tr td.active:active,
@@ -378,7 +396,6 @@
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-
 }
 .datepicker table tr td span:hover,
 .datepicker table tr td span.focused {
@@ -417,8 +434,8 @@
 .datepicker table tr td span.active:hover[disabled],
 .datepicker table tr td span.active.disabled[disabled],
 .datepicker table tr td span.active.disabled:hover[disabled] {
-   background-color: $primary-color;
-   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  background-color: $primary-color;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .datepicker table tr td span.active:active,
 .datepicker table tr td span.active:hover:active,
@@ -445,25 +462,25 @@
   cursor: pointer;
 }
 
-.datepicker{
-    .prev,
-    .next{
-        width: 35px;
-        height: 35px;
-    }
+.datepicker {
+  .prev,
+  .next {
+    width: 35px;
+    height: 35px;
+  }
 
-    i{
-        position: relative;
-        top: 2px;
-    }
+  i {
+    position: relative;
+    top: 2px;
+  }
 
-    .prev i{
-        left: -1px;
-    }
+  .prev i {
+    left: -1px;
+  }
 
-    .next i{
-        right: -1px;
-    }
+  .next i {
+    right: -1px;
+  }
 }
 
 .datepicker .datepicker-switch:hover,
@@ -520,7 +537,12 @@
   margin-right: -5px;
 }
 
-.table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th{
-     position: relative;
-     z-index: -1;
+.table-condensed > tbody > tr > td,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > td,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > thead > tr > th {
+  position: relative;
+  z-index: -1;
 }

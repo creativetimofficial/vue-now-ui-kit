@@ -16,7 +16,7 @@
 
 .pick-class-label {
   border-radius: 8px;
-  border: 1px solid #E3E3E3;
+  border: 1px solid #e3e3e3;
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
@@ -115,7 +115,7 @@
 }
 
 #notifications {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: block;
   width: 100%;
   position: relative;
@@ -143,7 +143,7 @@
 }
 
 .txt-white {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .txt-gray {
@@ -170,7 +170,7 @@
 
 .logo-container .brand {
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 18px;
   float: left;
   margin-left: 10px;
@@ -328,10 +328,10 @@
 .presentation .front .btn,
 .logo-container .logo,
 .logo-container .brand {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 #images h4 {
@@ -370,7 +370,7 @@
 }
 
 .navbar-transparent.navbar-small .logo-container .brand {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .navbar-default.navbar-small .logo-container .brand {
@@ -404,7 +404,7 @@
 }
 
 .section-tabs {
-  background: #EEEEEE;
+  background: #eeeeee;
 }
 
 .section-pagination {
@@ -427,7 +427,7 @@
   text-decoration: none;
 }
 
-.section-examples a+a {
+.section-examples a + a {
   margin-top: 30px;
 }
 
@@ -435,8 +435,8 @@
   margin-top: 30px;
 }
 
-.components-page .wrapper>.header,
-.tutorial-page .wrapper>.header {
+.components-page .wrapper > .header,
+.tutorial-page .wrapper > .header {
   height: 500px;
   padding-top: 128px;
   background-size: cover;
@@ -445,7 +445,7 @@
 
 .components-page .title,
 .tutorial-page .title {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .brand .h1-seo {

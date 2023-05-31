@@ -80,17 +80,17 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
 }
 .noUi-horizontal .noUi-handle {
   border-radius: 50%;
-    background-color: #FFFFFF;
-    box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.2);
-    height: 15px;
-    width: 15px;
-    cursor: pointer;
-    outline: 0;
+  background-color: #ffffff;
+  box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.2);
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  outline: 0;
 
-    &:before,
-    &:after{
-      display: none;
-    }
+  &:before,
+  &:after {
+    display: none;
+  }
 }
 .noUi-vertical {
   width: 18px;
@@ -116,7 +116,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   border-radius: 3px;
 }
 .noUi-connect {
-  background: #3FB8AF;
+  background: #3fb8af;
 }
 /* Handles and cursors;
  */
@@ -128,20 +128,20 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 .noUi-handle {
   border-radius: 3px;
-  background: #FFF;
+  background: #fff;
   cursor: default;
   -webkit-transition: $general-transition-time $transition-ease;
-    -moz-transition: $general-transition-time $transition-ease;
-    -ms-transition: $general-transition-time $transition-ease;
-    -o-transform: $general-transition-time $transition-ease;
-    transition: $general-transition-time $transition-ease;
+  -moz-transition: $general-transition-time $transition-ease;
+  -ms-transition: $general-transition-time $transition-ease;
+  -o-transform: $general-transition-time $transition-ease;
+  transition: $general-transition-time $transition-ease;
 }
 .noUi-active {
-  -webkit-transform: scale3d(1.5,1.5,1);
-    -moz-transform: scale3d(1.5,1.5,1);
-    -ms-transform: scale3d(1.5,1.5,1);
-    -o-transform: scale3d(1.5,1.5,1);
-    transform: scale3d(1.5,1.5,1);
+  -webkit-transform: scale3d(1.5, 1.5, 1);
+  -moz-transform: scale3d(1.5, 1.5, 1);
+  -ms-transform: scale3d(1.5, 1.5, 1);
+  -o-transform: scale3d(1.5, 1.5, 1);
+  transform: scale3d(1.5, 1.5, 1);
 }
 /* Handle stripes;
  */
@@ -152,7 +152,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   position: absolute;
   height: 14px;
   width: 1px;
-  background: #E8E7E6;
+  background: #e8e7e6;
   left: 14px;
   top: 6px;
 }
@@ -172,7 +172,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 /* Disabled state;
  */
 [disabled] .noUi-connect {
-  background: #B8B8B8;
+  background: #b8b8b8;
 }
 [disabled].noUi-target,
 [disabled].noUi-handle,
@@ -208,13 +208,13 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
  */
 .noUi-marker {
   position: absolute;
-  background: #CCC;
+  background: #ccc;
 }
 .noUi-marker-sub {
-  background: #AAA;
+  background: #aaa;
 }
 .noUi-marker-large {
-  background: #AAA;
+  background: #aaa;
 }
 /* Horizontal layout;
  *
@@ -277,7 +277,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .noUi-tooltip {
   display: block;
   position: absolute;
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
   border-radius: 3px;
   background: #fff;
   color: #000;
@@ -299,94 +299,93 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .slider {
-  & .noUi-connect{
-      background-color: $default-color;
+  & .noUi-connect {
+    background-color: $default-color;
   }
 
-	&.slider-neutral{
-    & .noUi-connect{
-        background-color: $white-color;
+  &.slider-neutral {
+    & .noUi-connect {
+      background-color: $white-color;
     }
 
-		&.noUi-target{
-			background-color: rgba(255,255,255, .3);
-		}
-
-		& .noUi-handle{
-			background-color: $white-color;
-		}
-	}
-
-	&.slider-primary{
-		& .noUi-connect,
-        &.noUi-connect{
-            background-color: $primary-color;
-        }
-
-		&.noUi-target{
-			background-color: $primary-color-opacity;
-		}
-
-		& .noUi-handle{
-			background-color: $brand-primary;
-		}
-	}
-
-    &.slider-info{
-        & .noUi-connect,
-        &.noUi-connect{
-            background-color: $brand-info;
-        }
-
-		&.noUi-target{
-			background-color: $info-color-opacity;
-		}
-
-		& .noUi-handle{
-			background-color: $brand-info;
-		}
-    }
-    &.slider-success{
-        & .noUi-connect,
-        &.noUi-connect{
-            background-color: $brand-success;
-        }
-
-        &.noUi-target{
-			background-color: $success-color-opacity;
-		}
-
-		& .noUi-handle{
-			background-color: $brand-success;
-		}
-    }
-    &.slider-warning{
-        & .noUi-connect,
-        &.noUi-connect{
-            background-color: $brand-warning;
-        }
-
-        &.noUi-target{
-			background-color: $warning-color-opacity;
-		}
-
-		& .noUi-handle{
-			background-color: $brand-warning;
-		}
-    }
-    &.slider-danger{
-        & .noUi-connect,
-        &.noUi-connect{
-            background-color: $brand-danger;
-        }
-
-        &.noUi-target{
-			background-color: $danger-color-opacity;
-		}
-
-		& .noUi-handle{
-			background-color: $brand-danger;
-		}
+    &.noUi-target {
+      background-color: rgba(255, 255, 255, 0.3);
     }
 
+    & .noUi-handle {
+      background-color: $white-color;
+    }
+  }
+
+  &.slider-primary {
+    & .noUi-connect,
+    &.noUi-connect {
+      background-color: $primary-color;
+    }
+
+    &.noUi-target {
+      background-color: $primary-color-opacity;
+    }
+
+    & .noUi-handle {
+      background-color: $brand-primary;
+    }
+  }
+
+  &.slider-info {
+    & .noUi-connect,
+    &.noUi-connect {
+      background-color: $brand-info;
+    }
+
+    &.noUi-target {
+      background-color: $info-color-opacity;
+    }
+
+    & .noUi-handle {
+      background-color: $brand-info;
+    }
+  }
+  &.slider-success {
+    & .noUi-connect,
+    &.noUi-connect {
+      background-color: $brand-success;
+    }
+
+    &.noUi-target {
+      background-color: $success-color-opacity;
+    }
+
+    & .noUi-handle {
+      background-color: $brand-success;
+    }
+  }
+  &.slider-warning {
+    & .noUi-connect,
+    &.noUi-connect {
+      background-color: $brand-warning;
+    }
+
+    &.noUi-target {
+      background-color: $warning-color-opacity;
+    }
+
+    & .noUi-handle {
+      background-color: $brand-warning;
+    }
+  }
+  &.slider-danger {
+    & .noUi-connect,
+    &.noUi-connect {
+      background-color: $brand-danger;
+    }
+
+    &.noUi-target {
+      background-color: $danger-color-opacity;
+    }
+
+    & .noUi-handle {
+      background-color: $brand-danger;
+    }
+  }
 }

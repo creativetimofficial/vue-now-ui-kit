@@ -21,33 +21,33 @@
   </fade-transition>
 </template>
 <script>
-import { FadeTransition } from 'vue2-transitions';
+import { FadeTransition } from "vue2-transitions";
 
 export default {
-  name: 'alert',
+  name: "alert",
   components: {
-    FadeTransition
+    FadeTransition,
   },
   props: {
     type: {
       type: String,
-      default: 'default',
-      description: 'Alert type'
+      default: "default",
+      description: "Alert type",
     },
     dismissible: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   data() {
     return {
-      visible: true
+      visible: true,
     };
   },
   methods: {
     dismissAlert() {
       this.visible = false;
-    }
-  }
+    },
+  },
 };
 </script>
