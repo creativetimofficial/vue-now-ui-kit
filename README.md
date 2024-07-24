@@ -32,6 +32,7 @@ You can find the Github Repo here.
 * [Versions](#versions)
 * [Demo](#demo)
 * [Quick Start](#quick-start)
+* [Deploy](#deploy)
 * [Documentation](#documentation)
 * [File Structure](#file-structure)
 * [Browser Support](#browser-support)
@@ -72,6 +73,11 @@ Quick start options:
 - Run `npm install` or `yarn install`
 - Run `npm run serve` to start a local development server
 
+## Deploy
+
+:rocket: You can deploy your own version of the template to Genezio with one click:
+
+[![Deploy to Genezio](https://raw.githubusercontent.com/Genez-io/graphics/main/svg/deploy-button.svg)](https://app.genez.io/start/deploy?repository=https://github.com/creativetimofficial/vue-now-ui-kit&utm_source=github&utm_medium=referral&utm_campaign=github-creativetim&utm_term=deploy-project&utm_content=button-head)
 
 ## Documentation
 The documentation for Vue Now UI Kit is hosted at our [website](https://demos.creative-tim.com/vue-now-ui-kit/documentation/).
